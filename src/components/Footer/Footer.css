@@ -1,0 +1,163 @@
+/* ===== Footer Base ===== */
+.footer {
+  background-color: #000000;
+  padding: 60px 40px;
+}
+
+.footer-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.footer-col {
+  flex: 1 1 200px;
+}
+
+/* ===== About Column ===== */
+.footer-about {
+  flex: 1 1 300px;
+  max-width: 340px;
+}
+
+.footer-logo-img {
+  height: 55px;
+  margin-bottom: 20px;
+}
+
+.footer-description {
+  color: #b3b3b3;
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.footer-description .highlight {
+  color: #22c55e;
+  font-weight: 700;
+}
+
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.contact-email {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.contact-item {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.contact-icon {
+  width: 18px;
+  height: 18px;
+}
+
+/* ===== Headings ===== */
+.footer-heading {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 22px;
+}
+
+/* ===== Links ===== */
+.footer-links {
+  gap: 14px;
+}
+
+.footer-links a {
+  color: #b3b3b3;
+  font-size: 15px;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+.footer-links a:hover {
+  color: #22c55e;
+}
+
+/* ===== Payment Column ===== */
+.footer-payment {
+  align-items: flex-start;
+  flex: 1 1 220px;
+  max-width: 260px;
+}
+
+.secure-payment-img {
+  width: 220px;
+  margin-bottom: 20px;
+}
+
+.payment-cards-img {
+  width: 220px;
+}
+
+/* ===== Responsive Design (Media Queries Only) ===== */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .footer {
+    padding: 50px 30px;
+  }
+
+  .footer-col {
+    flex: 1 1 45%;
+  }
+
+  .footer-about {
+    max-width: 100%;
+  }
+
+  .footer-payment {
+    align-items: flex-start;
+    max-width: 100%;
+  }
+}
+
+/* Small tablets / large phones */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .footer-col {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .footer-payment {
+    align-items: flex-start;
+  }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+  .footer {
+    padding: 40px 20px;
+  }
+
+  .footer-heading {
+    font-size: 18px;
+    margin-bottom: 16px;
+  }
+
+  .footer-description,
+  .contact-item,
+  .contact-email,
+  .footer-links a {
+    font-size: 14px;
+  }
+
+  .secure-payment-img,
+  .payment-cards-img {
+    width: 180px;
+  }
+}
