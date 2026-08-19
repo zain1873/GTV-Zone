@@ -1,19 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
 import "./HeroSection.css";
 import heroVideo from "../../assets/project-banner-video.mp4";
+import Navbar from "../Navbar/Navbar";
 
 // Simple Hero Section component with Navbar + background video area
 // Tailwind is used only for layout (flex, spacing, sizing, alignment)
 // All colors, fonts, hover effects, and responsiveness are in HeroSection.css
 function HeroSection() {
-  // Controls whether the mobile menu is open or closed
-  const [menuOpen, setMenuOpen] = useState(false);
-
-  // Toggles the mobile menu when the hamburger icon is clicked
-  function toggleMenu() {
-    setMenuOpen(!menuOpen);
-  }
-
   return (
     <header className="hero-wrapper">
       {/* Background video from the project banner asset */}
@@ -28,168 +21,10 @@ function HeroSection() {
         <source src={heroVideo} type="video/mp4" />
       </video>
 
-      {/* Dark overlay on top of the video for readability */}
       <div className="hero-overlay"></div>
 
-      {/* Navbar */}
-      <nav className="flex items-center justify-between w-full px-6 py-4 navbar">
-        {/* Logo */}
-        <div className="flex items-center gap-2 logo">
-          {/* TV icon (inline SVG, no external package needed) */}
-          <svg
-            className="logo-icon"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <rect
-              x="2"
-              y="6"
-              width="20"
-              height="13"
-              rx="2"
-              stroke="currentColor"
-              strokeWidth="2"
-            />
-            <path
-              d="M8 22H16M12 19V22M7 3L11 6M17 3L13 6"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-            />
-          </svg>
-          <span className="logo-text">8K</span>
-        </div>
-
-        {/* Menu links - desktop (hidden on mobile via CSS media query) */}
-        <ul className="flex items-center gap-8 nav-links">
-          <li>
-            <a href="#home" className="nav-link active-link">
-              HOME
-            </a>
-          </li>
-          <li>
-            <a href="#free-trial" className="nav-link">
-              FREE TRIAL
-            </a>
-          </li>
-          <li>
-            <a href="#pricing" className="nav-link">
-              PRICING
-            </a>
-          </li>
-          <li>
-            <a href="#channels" className="nav-link">
-              CHANNELS
-            </a>
-          </li>
-          <li>
-            <a href="#setup" className="nav-link">
-              SETUP
-            </a>
-          </li>
-          <li>
-            <a href="#reseller" className="nav-link">
-              RESELLER
-            </a>
-          </li>
-          <li>
-            <a href="#our-app" className="nav-link">
-              OUR APP
-            </a>
-          </li>
-        </ul>
-
-        {/* Client Area button - hidden on mobile via CSS media query */}
-        <a href="#client-area" className="client-area-btn desktop-only">
-          Client Area
-        </a>
-
-        {/* Hamburger icon - shown on mobile via CSS media query */}
-        <button className="hamburger-btn" onClick={toggleMenu}>
-          {menuOpen ? (
-            /* Close (X) icon */
-            <svg
-              width="26"
-              height="26"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M6 6L18 18M18 6L6 18"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-              />
-            </svg>
-          ) : (
-            /* Hamburger (menu) icon */
-            <svg
-              width="26"
-              height="26"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M3 6H21M3 12H21M3 18H21"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-              />
-            </svg>
-          )}
-        </button>
-      </nav>
-
-      {/* Mobile menu - shows/hides based on menuOpen state */}
-      {menuOpen && (
-        <div className="mobile-menu">
-          <ul className="flex flex-col items-center gap-6">
-            <li>
-              <a href="#home" onClick={toggleMenu} className="nav-link active-link">
-                HOME
-              </a>
-            </li>
-            <li>
-              <a href="#free-trial" onClick={toggleMenu} className="nav-link">
-                FREE TRIAL
-              </a>
-            </li>
-            <li>
-              <a href="#pricing" onClick={toggleMenu} className="nav-link">
-                PRICING
-              </a>
-            </li>
-            <li>
-              <a href="#channels" onClick={toggleMenu} className="nav-link">
-                CHANNELS
-              </a>
-            </li>
-            <li>
-              <a href="#setup" onClick={toggleMenu} className="nav-link">
-                SETUP
-              </a>
-            </li>
-            <li>
-              <a href="#reseller" onClick={toggleMenu} className="nav-link">
-                RESELLER
-              </a>
-            </li>
-            <li>
-              <a href="#our-app" onClick={toggleMenu} className="nav-link">
-                OUR APP
-              </a>
-            </li>
-            <li>
-              <a href="#client-area" onClick={toggleMenu} className="client-area-btn">
-                Client Area
-              </a>
-            </li>
-          </ul>
-        </div>
-      )}
+      {/* Reusable Navbar (shared with Contact page) */}
+      <Navbar />
 
       {/* Hero content */}
       <div className="flex flex-col justify-center hero-content px-6 md:px-16">
@@ -219,7 +54,6 @@ function HeroSection() {
         rel="noreferrer"
         className="whatsapp-btn"
       >
-        {/* WhatsApp icon (inline SVG, no external package needed) */}
         <svg
           width="28"
           height="28"

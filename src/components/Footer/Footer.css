@@ -1,162 +1,361 @@
-/* ===== Footer Base ===== */
+/* =========================================================
+   Footer — premium dark redesign
+   Brand accent: uses var(--theme-color)
+   ========================================================= */
+
 .footer {
-  background-color: #000000;
-  padding: 60px 40px;
+  position: relative;
+  background: #050505;
+  padding: 88px 40px 48px;
+  overflow: hidden;
+  isolation: isolate;
+
+  /* Theme-driven translucent accent shades.
+     The rgba() line is the fallback for browsers without color-mix();
+     the color-mix() line derives the same alpha from --theme-color. */
+  --theme-accent-16: rgba(9, 159, 219, 0.16);
+  --theme-accent-16: color-mix(in srgb, var(--theme-color) 16%, transparent);
+  --theme-accent-18: rgba(9, 159, 219, 0.18);
+  --theme-accent-18: color-mix(in srgb, var(--theme-color) 18%, transparent);
+  --theme-accent-22: rgba(9, 159, 219, 0.22);
+  --theme-accent-22: color-mix(in srgb, var(--theme-color) 22%, transparent);
+  --theme-accent-30: rgba(9, 159, 219, 0.3);
+  --theme-accent-30: color-mix(in srgb, var(--theme-color) 30%, transparent);
+  --theme-accent-50: rgba(9, 159, 219, 0.5);
+  --theme-accent-50: color-mix(in srgb, var(--theme-color) 50%, transparent);
+  --theme-accent-55: rgba(9, 159, 219, 0.55);
+  --theme-accent-55: color-mix(in srgb, var(--theme-color) 55%, transparent);
+  --theme-accent-60: rgba(9, 159, 219, 0.6);
+  --theme-accent-60: color-mix(in srgb, var(--theme-color) 60%, transparent);
+}
+
+/* Signature: a soft blue glow line marking the transition into the footer,
+   echoing the "on-air" edge of a screen — fits an IPTV/streaming brand. */
+.footer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    var(--theme-accent-55) 50%,
+    transparent 100%
+  );
+}
+
+.footer-glow {
+  position: absolute;
+  top: -180px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 640px;
+  height: 320px;
+  background: radial-gradient(
+    ellipse at center,
+    var(--theme-accent-16) 0%,
+    rgba(9, 159, 219, 0) 70%
+  );
+  pointer-events: none;
+  z-index: 0;
 }
 
 .footer-container {
+  position: relative;
+  z-index: 1;
   max-width: 1400px;
   margin: 0 auto;
 }
 
-.footer-col {
-  flex: 1 1 200px;
+/* ===== Grid layout ===== */
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1px 1fr 1fr 1px 1fr;
+  gap: 48px;
+  align-items: start;
 }
 
-/* ===== About Column ===== */
+.footer-divider {
+  align-self: stretch;
+  width: 1px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.12) 20%,
+    rgba(255, 255, 255, 0.12) 80%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.footer-col {
+  min-width: 0;
+}
+
+/* ===== About column ===== */
 .footer-about {
-  flex: 1 1 300px;
-  max-width: 340px;
+  max-width: 360px;
 }
 
 .footer-logo-img {
-  height: 55px;
-  margin-bottom: 20px;
+  height: 50px;
+  margin-bottom: 22px;
+  display: block;
 }
 
 .footer-description {
-  color: #b3b3b3;
-  font-size: 15px;
-  line-height: 1.6;
-  margin-bottom: 25px;
+  color: #9a9a9a;
+  font-size: 14.5px;
+  line-height: 1.7;
+  letter-spacing: 0.1px;
+  margin-bottom: 28px;
 }
 
 .footer-description .highlight {
-  color: #22c55e;
-  font-weight: 700;
+  color: var(--theme-color);
+  font-weight: 600;
 }
 
 .footer-contact {
   display: flex;
   flex-direction: column;
-  gap: 14px;
-}
-
-.contact-email {
-  color: #ffffff;
-  font-weight: 700;
-  font-size: 15px;
+  gap: 4px;
 }
 
 .contact-item {
-  color: #ffffff;
-  font-weight: 600;
-  font-size: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #e6e6e6;
+  font-weight: 500;
+  font-size: 14.5px;
+  text-decoration: none;
+  padding: 9px 0;
+  border-radius: 6px;
+  transition: color 0.2s ease, transform 0.2s ease;
+  width: fit-content;
+  max-width: 100%;
+}
+
+.contact-email-text {
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}
+
+.contact-icon-wrap {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  border: 1px solid var(--theme-accent-22);
+  transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
 }
 
 .contact-icon {
-  width: 18px;
-  height: 18px;
+  width: 13px;
+  height: 13px;
+  color: var(--theme-color);
+}
+
+.contact-email {
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.contact-item:hover,
+.contact-item:focus-visible {
+  color: var(--theme-color);
+  transform: translateX(3px);
+}
+
+.contact-item:hover .contact-icon-wrap,
+.contact-item:focus-visible .contact-icon-wrap {
+  background: var(--theme-accent-18);
+  border-color: var(--theme-accent-50);
+}
+
+.contact-item:focus-visible {
+  outline: 2px solid var(--theme-accent-60);
+  outline-offset: 3px;
 }
 
 /* ===== Headings ===== */
 .footer-heading {
   color: #ffffff;
-  font-size: 20px;
+  font-size: 15px;
   font-weight: 700;
-  margin-bottom: 22px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+  position: relative;
+  padding-bottom: 12px;
+}
+
+.footer-heading::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 26px;
+  height: 2px;
+  background: var(--theme-color);
+  border-radius: 2px;
 }
 
 /* ===== Links ===== */
 .footer-links {
-  gap: 14px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  margin: 0;
+  padding: 0;
 }
 
 .footer-links a {
-  color: #b3b3b3;
-  font-size: 15px;
+  position: relative;
+  color: #9a9a9a;
+  font-size: 14.5px;
   text-decoration: none;
-  transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease, padding-left 0.2s ease;
+  display: inline-block;
 }
 
-.footer-links a:hover {
-  color: #22c55e;
+.footer-links a::before {
+  content: "";
+  position: absolute;
+  left: -14px;
+  top: 50%;
+  transform: translateY(-50%) scaleX(0);
+  transform-origin: left;
+  width: 8px;
+  height: 1.5px;
+  background: var(--theme-color);
+  transition: transform 0.2s ease;
 }
 
-/* ===== Payment Column ===== */
+.footer-links a:hover,
+.footer-links a:focus-visible {
+  color: #ffffff;
+  padding-left: 14px;
+}
+
+.footer-links a:hover::before,
+.footer-links a:focus-visible::before {
+  transform: translateY(-50%) scaleX(1);
+}
+
+.footer-links a:focus-visible {
+  outline: 2px solid var(--theme-accent-60);
+  outline-offset: 4px;
+  border-radius: 3px;
+}
+
+/* ===== Payment column ===== */
 .footer-payment {
   align-items: flex-start;
-  flex: 1 1 220px;
-  max-width: 260px;
 }
 
-.secure-payment-img {
-  width: 220px;
-  margin-bottom: 20px;
+.payment-card-frame {
+  display: inline-flex;
+  padding: 14px 16px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.payment-card-frame:hover {
+  border-color: var(--theme-accent-30);
+  background: rgba(255, 255, 255, 0.045);
 }
 
 .payment-cards-img {
-  width: 220px;
+  width: 200px;
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
-/* ===== Responsive Design (Media Queries Only) ===== */
+/* ===== Responsive Design ===== */
 
 /* Tablets */
 @media (max-width: 1024px) {
   .footer {
-    padding: 50px 30px;
+    padding: 72px 30px 40px;
   }
 
-  .footer-col {
-    flex: 1 1 45%;
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 44px;
+    column-gap: 32px;
+  }
+
+  .footer-divider {
+    display: none;
   }
 
   .footer-about {
+    grid-column: 1 / -1;
     max-width: 100%;
   }
 
   .footer-payment {
-    align-items: flex-start;
-    max-width: 100%;
+    grid-column: 1 / -1;
+    padding-top: 8px;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
   }
 }
 
 /* Small tablets / large phones */
 @media (max-width: 768px) {
-  .footer-container {
-    flex-direction: column;
-    gap: 40px;
+  .footer-grid {
+    grid-template-columns: 1fr;
+    row-gap: 40px;
   }
 
   .footer-col {
-    flex: 1 1 100%;
-    max-width: 100%;
+    grid-column: 1 / -1 !important;
   }
 
   .footer-payment {
-    align-items: flex-start;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    padding-top: 32px;
   }
 }
 
 /* Mobile phones */
 @media (max-width: 480px) {
   .footer {
-    padding: 40px 20px;
+    padding: 56px 20px 36px;
+  }
+
+  .footer-glow {
+    width: 420px;
+    top: -140px;
   }
 
   .footer-heading {
-    font-size: 18px;
-    margin-bottom: 16px;
+    font-size: 14px;
+    margin-bottom: 18px;
   }
 
-  .footer-description,
-  .contact-item,
-  .contact-email,
+  .footer-description {
+    font-size: 14px;
+  }
+
+  .contact-item {
+    font-size: 14px;
+  }
+
   .footer-links a {
     font-size: 14px;
   }
 
-  .secure-payment-img,
   .payment-cards-img {
     width: 180px;
   }

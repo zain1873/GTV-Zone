@@ -1,0 +1,143 @@
+import React, { useState } from "react";
+import "./Pricingplans.css";
+
+// -----------------------------
+// Static data for the pricing table
+// (Only price + connection count change between tiers, features stay same)
+// -----------------------------
+const CONNECTION_TABS = [1, 2, 3];
+
+const PLANS_BY_CONNECTION = {
+  1: [
+    { months: 1, price: 15.99 },
+    { months: 3, price: 24.99 },
+    { months: 6, price: 39.99 },
+    { months: 12, price: 49.99 },
+  ],
+  2: [
+    { months: 1, price: 17.99 },
+    { months: 3, price: 39.99 },
+    { months: 6, price: 49.99 },
+    { months: 12, price: 79.99 },
+  ],
+  3: [
+    { months: 1, price: 19.99 },
+    { months: 3, price: 49.99 },
+    { months: 6, price: 79.99 },
+    { months: 12, price: 99.99 },
+  ],
+};
+
+const FEATURES = [
+  "100% No Buffering / No Freezing",
+  "Daily Updates for Channels, Movies, and TV Shows",
+  "Free Access to Our 8K VIP Premium Application",
+  "+35,000 TV Channels",
+  "+120,000 Movies",
+  "+31,000 Series",
+  "All PPV and Premium Channels",
+  "All 24/7 Channels",
+  "TV Guide (EPG)",
+  "99.9% Performance",
+  "Access All International Channels",
+  "Compatible with All Devices",
+  "Instant Activation!",
+  "24/7 Customer Support",
+  "30-days money-back guarantee",
+];
+
+// The 12 Month plan is highlighted as the best value
+const HIGHLIGHTED_MONTHS = 12;
+
+function PricingPlans() {
+  // Track which connections tab is currently active
+  const [activeConnection, setActiveConnection] = useState(1);
+
+  const activePlans = PLANS_BY_CONNECTION[activeConnection];
+
+  return (
+    <section className="pricing">
+      <div className="pricing-container max-w-7xl mx-auto px-4">
+        {/* Section heading */}
+        <div className="pricing-header flex flex-col items-center">
+          <span className="pricing-eyebrow">Choose Your Plan</span>
+          <h2 className="pricing-title">Simple, Flexible Pricing</h2>
+          <p className="pricing-subtitle">
+            Pick how many connections you need, then choose the plan length that works for you.
+          </p>
+        </div>
+
+        {/* Connections tabs */}
+        <div
+          className="pricing-tabs flex flex-wrap justify-center items-center"
+          role="tablist"
+          aria-label="Number of connections"
+        >
+          {CONNECTION_TABS.map((count) => (
+            <button
+              key={count}
+              type="button"
+              role="tab"
+              aria-selected={activeConnection === count}
+              className={
+                activeConnection === count ? "pricing-tab pricing-tab-active" : "pricing-tab"
+              }
+              onClick={() => setActiveConnection(count)}
+            >
+              {count} Connection{count > 1 ? "s" : ""}
+            </button>
+          ))}
+        </div>
+
+        {/* Plan cards */}
+        <div className="pricing-grid grid gap-6">
+          {activePlans.map((plan) => (
+            <article
+              key={plan.months}
+              className={
+                plan.months === HIGHLIGHTED_MONTHS
+                  ? "pricing-card pricing-card-highlight"
+                  : "pricing-card"
+              }
+            >
+              {plan.months === HIGHLIGHTED_MONTHS && (
+                <span className="pricing-badge">Best Value</span>
+              )}
+
+              <header className="pricing-card-header">
+                <h3 className="pricing-plan-name">
+                  {plan.months} Month{plan.months > 1 ? "s" : ""}
+                </h3>
+                <p className="pricing-plan-connections">
+                  {activeConnection} Connection{activeConnection > 1 ? "s" : ""}
+                </p>
+              </header>
+
+              <div className="pricing-price">
+                <span className="pricing-price-currency">$</span>
+                <span className="pricing-price-amount">{plan.price}</span>
+              </div>
+
+              <ul className="pricing-features">
+                {FEATURES.map((feature) => (
+                  <li key={feature} className="pricing-feature">
+                    <span className="pricing-feature-icon" aria-hidden="true">
+                      ✓
+                    </span>
+                    <span>{feature}</span>
+                  </li>
+                ))}
+              </ul>
+
+              <button type="button" className="pricing-buy-btn">
+                Buy Now
+              </button>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export default PricingPlans;

@@ -1,0 +1,266 @@
+
+
+.pricing {
+  background-color: #0b0b0b;
+  color: #f5f5f5;
+  padding: 80px 0;
+  --theme-glow: rgba(55, 186, 212, 0.35);
+  --theme-glow: color-mix(in srgb, var(--theme-color) 35%, transparent);
+}
+
+/* ---------- Header ---------- */
+
+.pricing-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.pricing-eyebrow {
+  display: inline-block;
+  color: var(--theme-color);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.pricing-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 12px;
+}
+
+.pricing-subtitle {
+  color: #a3a3a3;
+  font-size: 16px;
+  max-width: 520px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* ---------- Tabs ---------- */
+
+.pricing-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 48px;
+  flex-wrap: wrap;
+}
+
+.pricing-tab {
+  background-color: transparent;
+  border: 1px solid #3a3a3a;
+  color: #d4d4d4;
+  padding: 10px 24px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.pricing-tab:hover {
+  border-color: var(--theme-color);
+  color: #ffffff;
+}
+
+.pricing-tab-active {
+  background-color: var(--theme-color);
+  border-color: var(--theme-color);
+  color: #0b0b0b;
+}
+
+.pricing-tab-active:hover {
+  color: #0b0b0b;
+}
+
+/* ---------- Card ---------- */
+
+.pricing-card {
+  position: relative;
+  background: linear-gradient(180deg, #151515 0%, #0f0f0f 100%);
+  border: 1px solid #2a2a2a;
+  border-radius: 16px;
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pricing-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--theme-color);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.45);
+}
+
+.pricing-card-highlight {
+  border-color: var(--theme-color);
+  box-shadow: 0 0 0 1px var(--theme-color), 0 16px 34px rgba(0, 0, 0, 0.5);
+}
+
+.pricing-badge {
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--theme-color);
+  color: #0b0b0b;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  padding: 6px 16px;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+/* ---------- Card header + price ---------- */
+
+.pricing-card-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.pricing-plan-name {
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 4px;
+}
+
+.pricing-plan-connections {
+  font-size: 13px;
+  color: var(--theme-color-light);
+  margin: 0;
+}
+
+.pricing-price {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.pricing-price-currency {
+  font-size: 20px;
+  vertical-align: top;
+  position: relative;
+  top: 6px;
+  color: var(--theme-color);
+}
+
+.pricing-price-amount {
+  font-size: 46px;
+  font-weight: 800;
+}
+
+/* ---------- Features list ---------- */
+
+.pricing-features {
+  list-style: none;
+  margin: 0 0 28px;
+  padding: 0;
+  flex-grow: 1;
+}
+
+.pricing-feature {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 12px;
+  color: #d4d4d4;
+  padding: 8px 0;
+  border-bottom: 1px solid #232323;
+  line-height: 1.4;
+}
+
+.pricing-feature:last-child {
+  border-bottom: none;
+}
+
+.pricing-feature-icon {
+  color: var(--theme-color);
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+/* ---------- Buy button ---------- */
+
+.pricing-buy-btn {
+  width: 100%;
+  background-color: transparent;
+  border: 1.5px solid var(--theme-color);
+  color: var(--theme-color);
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  padding: 12px 0;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.25s ease, color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.pricing-buy-btn:hover {
+  background-color: var(--theme-color);
+  color: #0b0b0b;
+  box-shadow: 0 6px 18px var(--theme-glow);
+}
+
+/* =========================================================
+   Responsive layout — handled entirely with media queries,
+   the grid itself (columns/gap) lives here, not in Tailwind.
+   ========================================================= */
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .pricing-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .pricing-card-highlight {
+    order: -1;
+  }
+}
+
+/* Small tablets / large phones */
+@media (max-width: 640px) {
+  .pricing {
+    padding: 56px 0;
+  }
+
+  .pricing-title {
+    font-size: 28px;
+  }
+
+  .pricing-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pricing-tabs {
+    gap: 8px;
+  }
+
+  .pricing-tab {
+    padding: 9px 18px;
+    font-size: 13px;
+  }
+}
+
+/* Small phones */
+@media (max-width: 380px) {
+  .pricing-price-amount {
+    font-size: 38px;
+  }
+
+  .pricing-card {
+    padding: 26px 18px;
+  }
+}

@@ -1,0 +1,138 @@
+/* ===== Reusable Navbar ===== */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 30; 
+  background-color: transparent;
+  transition: background-color 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* Navbar logo image (GTA-1.png) */
+.hero-logo-img {
+  height: 40px;
+  width: auto;
+  display: block;
+}
+
+.nav-link {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
+
+.nav-link:hover {
+  color: var(--theme-color); 
+}
+
+.active-link {
+  color: var(--theme-color);
+}
+
+.client-area-btn {
+  border: 1px solid var(--theme-color);
+  color: var(--theme-color);
+  padding: 8px 18px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+.client-area-btn:hover {
+  background-color: var(--theme-color);
+  color: #0b0b0b;
+}
+
+/* ===== Scrolled state (white background + black links) ===== */
+.navbar.nav-scrolled {
+  background-color: #ffffff;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+}
+
+.navbar.nav-scrolled .nav-link {
+  color: #111111;
+}
+
+.navbar.nav-scrolled .nav-link.active-link {
+  color: var(--theme-color);
+}
+
+.navbar.nav-scrolled .hamburger-btn {
+  color: #111111;
+}
+
+/* ===== Hamburger button (mobile only) ===== */
+.hamburger-btn {
+  display: none;
+  background: none;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+/* ===== Mobile dropdown menu (full-screen overlay) ===== */
+.mobile-menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 20;
+  background-color: rgba(11, 11, 11, 0.97);
+  padding: 88px 24px 40px 24px;
+  overflow-y: auto;
+  animation: slideDown 0.25s ease;
+}
+
+.mobile-menu .client-area-btn {
+  display: inline-block;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== Responsive design (media queries only) ===== */
+@media (max-width: 480px) {
+  .hero-logo-img {
+    height: 34px;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .desktop-only {
+    display: none;
+  }
+
+  .hamburger-btn {
+    display: flex;
+  }
+
+  .mobile-menu.mobile-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
