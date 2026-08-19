@@ -49,7 +49,7 @@ function HeroSection() {
 
       {/* WhatsApp floating button */}
       <a
-        href="https://wa.me/00000000000"
+        href="https://wa.me/447346521271"
         target="_blank"
         rel="noreferrer"
         className="whatsapp-btn"

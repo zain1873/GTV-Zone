@@ -1,7 +1,6 @@
 import React from "react";
 import "./Footer.css";
 import { FaPhoneAlt, FaWhatsapp } from "react-icons/fa";
-import PaymentImg from "../../assets/payment-cards.png";
 import GTA1Logo from "../../assets/GTA-1.png";
 
 function Footer() {
@@ -38,7 +37,7 @@ function Footer() {
                 <span className="contact-email-text">support@8kiptv.co</span>
               </a>
 
-              <a
+              {/* <a
                 href="tel:+12107257388"
                 className="contact-item"
                 aria-label="Call 8K IPTV"
@@ -47,10 +46,10 @@ function Footer() {
                   <FaPhoneAlt className="contact-icon" aria-hidden="true" />
                 </span>
                 +1 (210) 725-7388
-              </a>
+              </a> */}
 
               <a
-                href="https://wa.me/12107257388"
+                href="https://wa.me/447346521271"
                 className="contact-item"
                 aria-label="Message 8K IPTV on WhatsApp"
                 target="_blank"
@@ -59,7 +58,7 @@ function Footer() {
                 <span className="contact-icon-wrap">
                   <FaWhatsapp className="contact-icon" aria-hidden="true" />
                 </span>
-                +1 (210) 725-7388
+                +44 7346 521271
               </a>
             </div>
           </div>
@@ -74,17 +73,12 @@ function Footer() {
                 <a href="/">Home</a>
               </li>
               <li>
-                <a href="/free-trial">Free Trial</a>
-              </li>
-              <li>
                 <a href="/pricing">Pricing</a>
               </li>
               <li>
                 <a href="/reseller-plans">Reseller Plans</a>
               </li>
-              <li>
-                <a href="/our-app">Our App</a>
-              </li>
+  
               <li>
                 <a href="/setup-guide">Setup Guide</a>
               </li>
@@ -115,17 +109,29 @@ function Footer() {
 
           <div className="footer-divider" aria-hidden="true" />
 
-          {/* Right column: Secure payment + card icons */}
-          <div className="footer-col footer-payment">
-            <h3 className="footer-heading">Secure Payment</h3>
-
-            <div className="payment-card-frame">
-              <img
-                src={PaymentImg}
-                alt="Accepted Payment Cards"
-                className="payment-cards-img"
-              />
-            </div>
+          {/* Right column: Popular Channels */}
+          <div className="footer-col">
+            <h3 className="footer-heading">Popular Channels</h3>
+            <ul className="footer-links">
+              <li>
+                <a href="/contact">Sports &amp; Pay-Per-View</a>
+              </li>
+              <li>
+                <a href="/contact">Movies &amp; Cinema</a>
+              </li>
+              <li>
+                <a href="/contact">TV Shows &amp; Series</a>
+              </li>
+              <li>
+                <a href="/contact">Kids &amp; Family</a>
+              </li>
+              <li>
+                <a href="/contact">News &amp; Documentaries</a>
+              </li>
+              <li>
+                <a href="/contact">International Channels</a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>

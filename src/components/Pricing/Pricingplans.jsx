@@ -9,16 +9,16 @@ const CONNECTION_TABS = [1, 2, 3];
 
 const PLANS_BY_CONNECTION = {
   1: [
-    { months: 1, price: 15.99 },
-    { months: 3, price: 24.99 },
-    { months: 6, price: 39.99 },
-    { months: 12, price: 49.99 },
+    { months: 1, price: 12 },
+    { months: 3, price: 17 },
+    { months: 6, price: 25 },
+    { months: 12, price: 40 },
   ],
   2: [
-    { months: 1, price: 17.99 },
-    { months: 3, price: 39.99 },
-    { months: 6, price: 49.99 },
-    { months: 12, price: 79.99 },
+    { months: 1, price: 17 },
+    { months: 3, price: 26 },
+    { months: 6, price: 39 },
+    { months: 12, price: 65 },
   ],
   3: [
     { months: 1, price: 19.99 },
@@ -114,7 +114,7 @@ function PricingPlans() {
               </header>
 
               <div className="pricing-price">
-                <span className="pricing-price-currency">$</span>
+                <span className="pricing-price-currency">£</span>
                 <span className="pricing-price-amount">{plan.price}</span>
               </div>
 

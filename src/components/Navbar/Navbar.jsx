@@ -1,6 +1,24 @@
 import React, { useEffect, useState } from "react";
 import "./Navbar.css";
+import { useLocation } from "react-router-dom";
 import GTA1Logo from "../../assets/GTA-1.png";
+
+// Maps the current URL path/hash to the nav link that should appear active.
+function getActiveKey(location) {
+  if (location.pathname === "/pricing") return "pricing";
+
+  const hash = (location.hash || "").replace("#", "");
+  const sectionKeys = {
+    home: "home",
+    "free-trial": "free-trial",
+    pricing: "pricing",
+    channels: "channels",
+    setup: "setup",
+    reseller: "reseller",
+    "our-app": "our-app",
+  };
+  return sectionKeys[hash] || "home";
+}
 
 function Navbar() {
   // Controls whether the mobile menu is open or closed
@@ -8,8 +26,12 @@ function Navbar() {
 
 
   const [scrolled, setScrolled] = useState(false);
+  const location = useLocation();
 
-  // Toggles the mobile menu when the hamburger icon is clicked
+  const activeKey = getActiveKey(location);
+  const navLinkClass = (key) =>
+    `nav-link${activeKey === key ? " active-link" : ""}`;
+
   function toggleMenu() {
     setMenuOpen(!menuOpen);
   }
@@ -59,39 +81,33 @@ function Navbar() {
 
         <ul className="flex items-center gap-8 nav-links">
           <li>
-            <a href="#home" className="nav-link active-link">
+            <a href="/" className={navLinkClass("home")}>
               HOME
             </a>
           </li>
+
           <li>
-            <a href="#free-trial" className="nav-link">
-              FREE TRIAL
-            </a>
-          </li>
-          <li>
-            <a href="#pricing" className="nav-link">
+            <a href="/pricing" className={navLinkClass("pricing")}>
               PRICING
             </a>
           </li>
           <li>
-            <a href="#channels" className="nav-link">
+            <a href="#channels" className={navLinkClass("channels")}>
               CHANNELS
             </a>
           </li>
           <li>
-            <a href="#setup" className="nav-link">
+            <a href="#setup" className={navLinkClass("setup")}>
               SETUP
             </a>
           </li>
           <li>
-            <a href="#reseller" className="nav-link">
+            <a href="#reseller" className={navLinkClass("reseller")}>
               RESELLER
             </a>
           </li>
           <li>
-            <a href="#our-app" className="nav-link">
-              OUR APP
-            </a>
+  
           </li>
         </ul>
 
@@ -144,38 +160,62 @@ function Navbar() {
               <a
                 href="#home"
                 onClick={toggleMenu}
-                className="nav-link active-link"
+                className={navLinkClass("home")}
               >
                 HOME
               </a>
             </li>
             <li>
-              <a href="#free-trial" onClick={toggleMenu} className="nav-link">
+              <a
+                href="#free-trial"
+                onClick={toggleMenu}
+                className={navLinkClass("free-trial")}
+              >
                 FREE TRIAL
               </a>
             </li>
             <li>
-              <a href="#pricing" onClick={toggleMenu} className="nav-link">
+              <a
+                href="/pricing"
+                onClick={toggleMenu}
+                className={navLinkClass("pricing")}
+              >
                 PRICING
               </a>
             </li>
             <li>
-              <a href="#channels" onClick={toggleMenu} className="nav-link">
+              <a
+                href="#channels"
+                onClick={toggleMenu}
+                className={navLinkClass("channels")}
+              >
                 CHANNELS
               </a>
             </li>
             <li>
-              <a href="#setup" onClick={toggleMenu} className="nav-link">
+              <a
+                href="#setup"
+                onClick={toggleMenu}
+                className={navLinkClass("setup")}
+              >
                 SETUP
               </a>
             </li>
             <li>
-              <a href="#reseller" onClick={toggleMenu} className="nav-link">
+              <a
+                href="#reseller"
+                onClick={toggleMenu}
+                className={navLinkClass("reseller")}
+              >
                 RESELLER
               </a>
             </li>
             <li>
-              <a href="#our-app" onClick={toggleMenu} className="nav-link">
+              <a
+                href="#our-app"
+                onClick={toggleMenu}
+                className={navLinkClass("our-app")}
+              >
                 OUR APP
               </a>
             </li>
