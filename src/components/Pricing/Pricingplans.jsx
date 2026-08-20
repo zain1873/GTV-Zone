@@ -129,9 +129,17 @@ function PricingPlans() {
                 ))}
               </ul>
 
-              <button type="button" className="pricing-buy-btn">
+              <a
+                className="pricing-buy-btn"
+                href={`https://wa.me/447346521271?text=${encodeURIComponent(
+                  `Hi GTV, I'd like to buy the ${activeConnection} connection ${plan.months} month plan for £${plan.price}.`
+                )}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={`Buy the ${activeConnection} connection ${plan.months} month plan on WhatsApp`}
+              >
                 Buy Now
-              </button>
+              </a>
             </article>
           ))}
         </div>
