@@ -15,15 +15,10 @@ const CONTACT_INFO = [
   {
     icon: <FaEnvelope aria-hidden="true" />,
     label: "Email Us",
-    value: "support@8kiptv.co",
-    href: "mailto:support@8kiptv.co",
+    value: "support@iptv.co",
+    href: "mailto:support@iptv.co",
   },
-  {
-    icon: <FaPhoneAlt aria-hidden="true" />,
-    label: "Call Us",
-    value: "+1 (210) 725-7388",
-    href: "tel:+12107257388",
-  },
+
   {
     icon: <FaWhatsapp aria-hidden="true" />,
     label: "WhatsApp",
@@ -34,7 +29,7 @@ const CONTACT_INFO = [
     icon: <FaClock aria-hidden="true" />,
     label: "Support Hours",
     value: "24/7 — 365 days",
-    href: "mailto:support@8kiptv.co",
+    href: "mailto:support@gtv.co",
   },
 ];
 

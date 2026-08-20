@@ -1,0 +1,278 @@
+
+.reseller {
+  background-color: #050505;
+  color: #f5f5f5;
+  font-family: "Poppins", Arial, sans-serif;
+  padding: 90px 0;
+}
+
+/* ---------- Header ---------- */
+
+.reseller-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.reseller-eyebrow {
+  color: var(--theme-color);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.reseller-title {
+  font-size: 34px;
+  font-weight: 800;
+  color: #ffffff;
+  margin: 0;
+}
+
+/* ---------- Grid ---------- */
+
+.reseller-grid {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* ---------- Card ---------- */
+
+.reseller-card {
+  position: relative;
+  background-color: #0d0d0d;
+  border: 1px solid #262626;
+  border-radius: 14px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.reseller-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--theme-color);
+  box-shadow: 0 16px 32px rgba(34, 151, 197, 0.25);
+}
+
+.reseller-card-highlight {
+  border-color: var(--theme-color);
+  box-shadow: 0 0 0 1px var(--theme-color), 0 16px 34px rgba(0, 0, 0, 0.5);
+}
+
+.reseller-badge {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  background-color: #0d0d0d;
+  color: var(--theme-color);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  padding: 5px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--theme-color);
+  display: none;
+  z-index: 1;
+}
+
+/* ---------- Card top (credits banner) ---------- */
+
+.reseller-card-top {
+  background: var(--theme-color);
+  color: #08130a;
+  text-align: center;
+  font-size: 17px;
+  font-weight: 800;
+  padding: 16px 0;
+}
+
+/* ---------- Price ---------- */
+
+.reseller-price {
+  text-align: center;
+  color: #ffffff;
+  padding: 26px 0 10px;
+}
+
+.reseller-price-currency {
+  font-size: 20px;
+  vertical-align: top;
+  position: relative;
+  top: 6px;
+  color: var(--theme-color);
+}
+
+.reseller-price-amount {
+  font-size: 40px;
+  font-weight: 800;
+}
+
+/* ---------- Features list ---------- */
+
+.reseller-features {
+  list-style: none;
+  margin: 0;
+  padding: 8px 22px 20px;
+  flex-grow: 1;
+}
+
+.reseller-feature {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 13.5px;
+  color: #c7c7c7;
+  padding: 10px 0;
+  border-bottom: 1px solid #1f1f1f;
+  line-height: 1.4;
+}
+
+.reseller-feature:last-child {
+  border-bottom: none;
+}
+
+.reseller-feature-icon {
+  color: var(--theme-color);
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+/* ---------- Buy button ---------- */
+
+.reseller-buy-btn {
+  width: calc(100% - 44px);
+  margin: 8px 22px 28px;
+  background-color: transparent;
+  border: 1.5px solid var(--theme-color);
+  color: var(--theme-color);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  padding: 12px 0;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.25s ease, color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.reseller-buy-btn:hover {
+  background-color: var(--theme-color);
+  color: #08130a;
+  box-shadow: 0 6px 18px rgba(34, 197, 94, 0.4);
+}
+
+/* =========================================================
+   CTA band
+   ========================================================= */
+
+.reseller-cta {
+  background: linear-gradient(
+    135deg,
+    var(--theme-color) 0%,
+    #0d0d0d 100%
+  );
+  color: #f5f5f5;
+  padding: 80px 0;
+  margin-top: -1px; /* avoid a gap between the grid section and the band */
+}
+
+.reseller-cta-container {
+  text-align: center;
+}
+
+.reseller-cta-eyebrow {
+  display: inline-block;
+  color: var(--theme-color-light);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 6px 16px;
+  border: 1px solid var(--theme-color);
+  border-radius: 999px;
+  margin-bottom: 20px;
+}
+
+.reseller-cta-title {
+  font-size: 36px;
+  font-weight: 800;
+  color: #ffffff;
+  margin: 0 0 16px;
+}
+
+.reseller-cta-text {
+  max-width: 640px;
+  margin: 0 auto 32px;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #d2d2d2;
+}
+
+.reseller-cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #25d366;
+  color: #07170d;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 14px 32px;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.reseller-cta-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(37, 211, 102, 0.35);
+}
+
+/* =========================================================
+   Responsive layout — handled entirely with media queries.
+   ========================================================= */
+
+@media (max-width: 1024px) {
+  .reseller-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .reseller {
+    padding: 60px 0;
+  }
+
+  .reseller-title {
+    font-size: 26px;
+  }
+
+  .reseller-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .reseller-cta {
+    padding: 56px 0;
+  }
+
+  .reseller-cta-title {
+    font-size: 28px;
+  }
+
+  .reseller-cta-text {
+    font-size: 15px;
+  }
+
+  .reseller-cta-btn {
+    width: 100%;
+    justify-content: center;
+    padding: 14px 24px;
+  }
+}
+
+@media (max-width: 380px) {
+  .reseller-price-amount {
+    font-size: 34px;
+  }
+}

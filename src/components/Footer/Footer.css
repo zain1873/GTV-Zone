@@ -30,7 +30,7 @@
 }
 
 /* Signature: a soft blue glow line marking the transition into the footer,
-   echoing the "on-air" edge of a screen — fits an IPTV/streaming brand. */
+   echoing the "on-air" edge of a screen — fits a GTV/streaming brand. */
 .footer::before {
   content: "";
   position: absolute;

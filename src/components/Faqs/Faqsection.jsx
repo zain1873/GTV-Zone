@@ -4,17 +4,17 @@ import "./Faqsection.css";
 
 const FAQS = [
   {
-    question: "What is 8K IPTV?",
+    question: "What is GTV?",
     answer:
-      "8K IPTV is a premium live streaming subscription that gives you access to over 45,000 channels, movies and series in 8K, 4K, FHD and HD quality, all delivered over the internet to your favorite devices.",
+      "GTV is a premium live streaming subscription that gives you access to over 45,000 channels, movies and series in 4K, FHD and HD quality, all delivered over the internet to your favorite devices.",
   },
   {
-    question: "What do I get with an 8K IPTV subscription?",
+    question: "What do I get with an GTV subscription?",
     answer:
-      "You get full access to all live TV channels, VOD movies and series, PPV and premium sports events, a TV guide (EPG), and our 8K VIP premium application - all in one subscription.",
+      "You get full access to all live TV channels, VOD movies and series, PPV and premium sports events, a TV guide (EPG), and our VIP premium application - all in one subscription.",
   },
   {
-    question: "How long does it take to activate my IPTV account?",
+    question: "How long does it take to activate my GTV account?",
     answer:
       "Activation is usually instant to 15 minutes after your order is confirmed. If it's taking longer than expected, reach out to us on WhatsApp and we'll speed things up.",
   },
@@ -24,12 +24,12 @@ const FAQS = [
       "Yes! We offer a free 24 hour trial so you can test channel quality, stability and device compatibility before choosing a plan.",
   },
   {
-    question: "What devices are compatible with 8K IPTV?",
+    question: "What devices are compatible with GTV?",
     answer:
-      "8K IPTV works on Smart TVs, Android and iOS devices, Firestick, MAG boxes, Android boxes, PC/Mac, and most devices that support IPTV player apps.",
+      "GTV works on Smart TVs, Android and iOS devices, Firestick, MAG boxes, Android boxes, PC/Mac, and most devices that support GTV player apps.",
   },
   {
-    question: "Will the IPTV service buffer or freeze?",
+    question: "Will the GTV service buffer or freeze?",
     answer:
       "Our servers are optimized for 99.9% uptime and smooth streaming. As long as you have a stable internet connection, you shouldn't experience buffering or freezing.",
   },

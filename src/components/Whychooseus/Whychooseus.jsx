@@ -39,9 +39,9 @@ const STEPS = [
   },
   {
     number: 3,
-    title: "Enjoy IPTV service!",
+    title: "Enjoy GTV service!",
     description:
-      "Enjoy all channels, films, and series now. Immerse yourself in endless entertainment with our IPTV service.",
+      "Enjoy all channels, films, and series now. Immerse yourself in endless entertainment with our GTV service.",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
         <rect
@@ -71,7 +71,7 @@ function WhyChooseUs() {
         {/* Section heading */}
         <div className="why-choose-header flex flex-col items-center">
           <span className="why-choose-eyebrow">Core Features</span>
-          <h2 className="why-choose-title">Why Choose 8K IPTV ?</h2>
+          <h2 className="why-choose-title">Why Choose GTV ?</h2>
         </div>
 
         {/* Steps grid */}

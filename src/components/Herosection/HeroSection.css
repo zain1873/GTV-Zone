@@ -104,28 +104,8 @@
   transform: translateY(-2px);
 }
 
-/* ===== WhatsApp floating button ===== */
-.whatsapp-btn {
-  position: fixed;
-  bottom: 24px;
-  right: 24px;
-  width: 52px;
-  height: 52px;
-  border-radius: 50%;
-  background-color: #25d366;
-  color: #ffffff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-  z-index: 3;
-  transition: transform 0.2s ease;
-}
-
-.whatsapp-btn:hover {
-  transform: scale(1.1);
-}
+/* WhatsApp floating button styles were moved to
+   ../WhatsAppButton/WhatsAppButton.css so the button renders on all pages. */
 
 /* ===== Responsive design (media queries only) ===== */
 
@@ -168,12 +148,5 @@
   .free-trial-btn {
     padding: 12px 22px;
     font-size: 14px;
-  }
-
-  .whatsapp-btn {
-    width: 44px;
-    height: 44px;
-    bottom: 16px;
-    right: 16px;
   }
 }

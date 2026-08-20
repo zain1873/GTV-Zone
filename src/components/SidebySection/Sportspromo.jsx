@@ -10,7 +10,7 @@ function SportsPromo() {
         <div className="sports-promo-image-wrap flex items-center justify-center">
           <img
             src={sideImg}
-            alt="8K IPTV streaming on TV, tablet and phone"
+            alt="GTV streaming on TV, tablet and phone"
             className="sports-promo-image"
           />
         </div>
@@ -18,29 +18,28 @@ function SportsPromo() {
         {/* Right side - text content */}
         <div className="sports-promo-text flex flex-col">
           <h2 className="sports-promo-title">
-            8K IPTV – Don&apos;t Miss the Best Live Sports Channels
+            GTV – Don&apos;t Miss the Best Live Sports Channels
           </h2>
 
           <p className="sports-promo-paragraph">
-            <span className="sports-promo-highlight">8K IPTV</span> – The #1
-            Premium IPTV Subscription Worldwide, offering over 45,000
-            channels in 8K, 4K, FHD, and HD quality. Enjoy unlimited movies
-            and series, plus all your favorite TV in one seamless 8K
+            <span className="sports-promo-highlight">GTV</span> – The #1
+            Premium GTV Subscription Worldwide, offering over 45,000
+            channels in 4K, FHD, and HD quality. Enjoy unlimited movies
+            and series, plus all your favorite TV in one seamless
             subscription with multi-screen streaming—no interruptions, no
             hassle!
           </p>
 
           <p className="sports-promo-paragraph">
-            <span className="sports-promo-highlight">8K IPTV</span> – Enjoy a
-            stable IPTV experience with breathtaking picture quality in 8K,
-            4K, FHD, HEVC, and HD. Stream seamlessly, optimized for your
+            <span className="sports-promo-highlight">GTV</span> – Enjoy a
+            stable GTV experience with breathtaking picture quality in 4K, FHD, HEVC, and HD. Stream seamlessly, optimized for your
             connection speed, and enjoy uninterrupted, high-quality
             entertainment. Join us today!
           </p>
 
           <p className="sports-promo-paragraph">
             Catch all the biggest games and PPV events with{" "}
-            <span className="sports-promo-highlight">8K IPTV</span>! Sit
+            <span className="sports-promo-highlight">GTV</span>! Sit
             back, grab your popcorn, and immerse yourself in the action!
           </p>
         </div>

@@ -13,34 +13,34 @@ function Footer() {
           {/* Left column: Logo, description, contact info */}
           <div className="footer-col footer-about">
             <div className="footer-logo">
-              <a href="/" className="footer-logo-link" aria-label="8K IPTV Home">
+              <a href="/" className="footer-logo-link" aria-label="GTV Home">
                 <img
                   src={GTA1Logo}
-                  alt="8K IPTV Logo"
+                  alt="GTV Logo"
                   className="footer-logo-img"
                 />
               </a>
             </div>
 
             <p className="footer-description">
-              With <span className="highlight">8K IPTV</span>, we make
+              With <span className="highlight">GTV</span>, we make
               television affordable and accessible to everyone, anywhere!
               Join over 5,000 satisfied customers.
             </p>
 
             <div className="footer-contact">
               <a
-                href="mailto:support@8kiptv.co"
+                href="mailto:support@iptv.co"
                 className="contact-item contact-email"
-                aria-label="Email 8K IPTV support"
+                aria-label="Email GTV support"
               >
-                <span className="contact-email-text">support@8kiptv.co</span>
+                <span className="contact-email-text">support@iptv.co</span>
               </a>
 
               {/* <a
                 href="tel:+12107257388"
                 className="contact-item"
-                aria-label="Call 8K IPTV"
+                aria-label="Call GTV"
               >
                 <span className="contact-icon-wrap">
                   <FaPhoneAlt className="contact-icon" aria-hidden="true" />
@@ -51,7 +51,7 @@ function Footer() {
               <a
                 href="https://wa.me/447346521271"
                 className="contact-item"
-                aria-label="Message 8K IPTV on WhatsApp"
+                aria-label="Message GTV on WhatsApp"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -76,11 +76,11 @@ function Footer() {
                 <a href="/pricing">Pricing</a>
               </li>
               <li>
-                <a href="/reseller-plans">Reseller Plans</a>
+                <a href="/channels">Channels</a>
               </li>
   
               <li>
-                <a href="/setup-guide">Setup Guide</a>
+                <a href="/reseller">Reseller</a>
               </li>
               <li>
                 <a href="/contact">Contact</a>

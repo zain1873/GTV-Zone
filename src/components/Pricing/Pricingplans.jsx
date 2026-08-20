@@ -31,7 +31,7 @@ const PLANS_BY_CONNECTION = {
 const FEATURES = [
   "100% No Buffering / No Freezing",
   "Daily Updates for Channels, Movies, and TV Shows",
-  "Free Access to Our 8K VIP Premium Application",
+  "Free Access to Our VIP Premium Application",
   "+35,000 TV Channels",
   "+120,000 Movies",
   "+31,000 Series",

@@ -1,0 +1,366 @@
+/* =========================================================
+   LegalPage — themed dark info/legal pages
+   Matches the site-wide GTV theme (see Contact.css / Reseller.css)
+   ========================================================= */
+
+.legal-page {
+  background-color: #050505;
+  color: #f5f5f5;
+  font-family: "Poppins", Arial, sans-serif;
+  min-height: 100vh;
+}
+
+.legal-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ===== Hero ===== */
+.legal-hero {
+  position: relative;
+  padding: 150px 0 90px;
+  text-align: center;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.legal-hero-glow {
+  position: absolute;
+  top: -160px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 720px;
+  height: 360px;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(9, 159, 219, 0.18) 0%,
+    rgba(9, 159, 219, 0) 70%
+  );
+  pointer-events: none;
+  z-index: -1;
+}
+
+.legal-hero-inner {
+  position: relative;
+  z-index: 1;
+}
+
+.legal-eyebrow {
+  display: inline-block;
+  color: var(--theme-color);
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  padding: 6px 16px;
+  border: 1px solid var(--theme-color);
+  border-radius: 999px;
+}
+
+.legal-title {
+  font-size: 44px;
+  font-weight: 800;
+  line-height: 1.2;
+  color: #ffffff;
+  margin: 0 auto 18px;
+  max-width: 680px;
+  text-shadow: 0 0 28px rgba(9, 159, 219, 0.35);
+}
+
+.legal-subtitle {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #a8a8a8;
+  max-width: 620px;
+  margin: 0 auto;
+}
+
+.legal-updated {
+  display: inline-block;
+  margin-top: 18px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  color: #9a9a9a;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* ===== Layout: TOC sidebar + content ===== */
+.legal-layout {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 48px;
+  align-items: start;
+}
+
+.legal-content {
+  padding: 0 0 90px;
+}
+
+/* --- Table of contents --- */
+.legal-toc {
+  position: sticky;
+  top: 96px;
+  align-self: start;
+  background: #0d0f0d;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  padding: 24px 22px;
+}
+
+.legal-toc-title {
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--theme-color);
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.legal-toc-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.legal-toc-list a {
+  position: relative;
+  display: inline-block;
+  color: #9a9a9a;
+  font-size: 14px;
+  text-decoration: none;
+  transition: color 0.2s ease, padding-left 0.2s ease;
+}
+
+.legal-toc-list a::before {
+  content: "";
+  position: absolute;
+  left: -14px;
+  top: 50%;
+  transform: translateY(-50%) scaleX(0);
+  transform-origin: left;
+  width: 8px;
+  height: 1.5px;
+  background: var(--theme-color);
+  transition: transform 0.2s ease;
+}
+
+.legal-toc-list a:hover,
+.legal-toc-list a:focus-visible {
+  color: #ffffff;
+  padding-left: 14px;
+}
+
+.legal-toc-list a:hover::before,
+.legal-toc-list a:focus-visible::before {
+  transform: translateY(-50%) scaleX(1);
+}
+
+.legal-toc-list a:focus-visible {
+  outline: 2px solid var(--theme-color);
+  outline-offset: 3px;
+  border-radius: 3px;
+}
+
+/* --- Main content --- */
+.legal-section {
+  padding: 6px 0 10px;
+}
+
+.legal-first {
+  padding-top: 0;
+}
+
+.legal-section-heading {
+  display: inline-block;
+  font-size: 22px;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 14px;
+  position: relative;
+  padding-bottom: 8px;
+}
+
+.legal-section-heading::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 26px;
+  height: 2px;
+  background: var(--theme-color);
+  border-radius: 2px;
+}
+
+.legal-paragraph {
+  font-size: 15px;
+  line-height: 1.8;
+  color: #c7c7c7;
+  margin: 0 0 14px;
+}
+
+.legal-subheading {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--theme-color-light, var(--theme-color));
+  margin: 18px 0 10px;
+}
+
+.legal-list {
+  list-style: none;
+  margin: 0 0 14px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.legal-list li {
+  position: relative;
+  padding-left: 22px;
+  font-size: 15px;
+  line-height: 1.7;
+  color: #c7c7c7;
+}
+
+.legal-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--theme-color);
+  font-weight: 700;
+}
+
+/* --- Contact note at the end --- */
+.legal-contact-note {
+  margin-top: 44px;
+  background: #0d0f0d;
+  border: 1px solid rgba(9, 159, 219, 0.22);
+  border-radius: 14px;
+  padding: 28px 26px;
+}
+
+.legal-contact-note p {
+  font-size: 14.5px;
+  line-height: 1.7;
+  color: #a8a8a8;
+  margin: 0 0 14px;
+}
+
+.legal-inline-link {
+  color: var(--theme-color);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.legal-inline-link:hover,
+.legal-inline-link:focus-visible {
+  text-decoration: underline;
+}
+
+.legal-whatsapp-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: #25d366;
+  color: #07170d;
+  font-size: 14.5px;
+  font-weight: 700;
+  padding: 12px 22px;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.legal-whatsapp-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 22px rgba(37, 211, 102, 0.4);
+}
+
+/* =========================================================
+   Responsive layout
+   ========================================================= */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .legal-layout {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  /* Stack TOC above content as a simple card with horizontal anchors */
+  .legal-toc {
+    position: static;
+  }
+}
+
+/* Small tablets / large phones */
+@media (max-width: 768px) {
+  .legal-hero {
+    padding: 130px 0 70px;
+  }
+
+  .legal-title {
+    font-size: 32px;
+  }
+}
+
+/* Mobile phones */
+@media (max-width: 520px) {
+  .legal-hero {
+    padding: 110px 0 60px;
+  }
+
+  .legal-eyebrow {
+    font-size: 12px;
+  }
+
+  .legal-title {
+    font-size: 27px;
+  }
+
+  .legal-subtitle {
+    font-size: 14.5px;
+  }
+
+  .legal-updated {
+    font-size: 12px;
+  }
+
+  .legal-toc {
+    padding: 20px 18px;
+  }
+
+  .legal-toc-list a {
+    font-size: 13px;
+  }
+
+  .legal-section-heading {
+    font-size: 19px;
+  }
+
+  .legal-paragraph,
+  .legal-list li {
+    font-size: 14px;
+  }
+
+  .legal-contact-note {
+    padding: 22px 18px;
+  }
+
+  .legal-whatsapp-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}

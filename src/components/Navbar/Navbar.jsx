@@ -5,8 +5,9 @@ import GTA1Logo from "../../assets/GTA-1.png";
 
 // Maps the current URL path/hash to the nav link that should appear active.
 function getActiveKey(location) {
-  if (location.pathname === "/pricing") return "pricing";
+  const path = location.pathname.replace(/\/+$/, "");
 
+  // Hash-based (single-page anchor sections)
   const hash = (location.hash || "").replace("#", "");
   const sectionKeys = {
     home: "home",
@@ -17,7 +18,19 @@ function getActiveKey(location) {
     reseller: "reseller",
     "our-app": "our-app",
   };
-  return sectionKeys[hash] || "home";
+  if (sectionKeys[hash]) return sectionKeys[hash];
+
+  // Pathname-based routes
+  const pathKeys = {
+    "": "home",
+    "/": "home",
+    "/pricing": "pricing",
+    "/channels": "channels",
+    "/setup": "setup",
+    "/reseller": "reseller",
+  };
+
+  return pathKeys[path] || "home";
 }
 
 function Navbar() {
@@ -74,8 +87,8 @@ function Navbar() {
       >
         {/* Logo */}
         <div className="flex items-center gap-2 logo">
-          <a href="/" className="logo-link" aria-label="8K IPTV Home">
-            <img src={GTA1Logo} alt="8K IPTV Logo" className="hero-logo-img" />
+          <a href="/" className="logo-link" aria-label="GTV Home">
+            <img src={GTA1Logo} alt="GTV Logo" className="hero-logo-img" />
           </a>
         </div>
 
@@ -92,17 +105,17 @@ function Navbar() {
             </a>
           </li>
           <li>
-            <a href="#channels" className={navLinkClass("channels")}>
+            <a href="/channels" className={navLinkClass("channels")}>
               CHANNELS
             </a>
           </li>
           <li>
-            <a href="#setup" className={navLinkClass("setup")}>
+            <a href="/setup" className={navLinkClass("setup")}>
               SETUP
             </a>
           </li>
           <li>
-            <a href="#reseller" className={navLinkClass("reseller")}>
+            <a href="/reseller" className={navLinkClass("reseller")}>
               RESELLER
             </a>
           </li>
@@ -194,7 +207,7 @@ function Navbar() {
             </li>
             <li>
               <a
-                href="#setup"
+                href="/setup"
                 onClick={toggleMenu}
                 className={navLinkClass("setup")}
               >

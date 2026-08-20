@@ -1,0 +1,147 @@
+
+.channels-section {
+  background-color: #050505;
+  padding: 80px 0;
+}
+
+.channels-title {
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 800;
+  text-align: center;
+  margin: 0 0 34px;
+}
+
+/* ---------- Country grid ---------- */
+
+.channels-grid {
+  grid-template-columns: repeat(3, 1fr);
+  border: 1px solid #2a2a2a;
+  border-radius: 10px;
+  padding: 0 24px;
+}
+
+.channel-country-btn {
+  background: none;
+  border: none;
+  border-bottom: 1px solid #2a2a2a;
+  color: var(--theme-color);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  text-align: left;
+  padding: 16px 4px;
+  cursor: pointer;
+  transition: color 0.2s ease, opacity 0.2s ease;
+}
+
+.channel-country-btn:hover {
+  opacity: 0.75;
+}
+
+.channel-country-active {
+  color: #ffffff;
+}
+
+.channel-flag {
+  font-size: 16px;
+}
+
+/* ---------- Channels accordion panel ---------- */
+
+.channels-panel {
+  margin-top: 28px;
+  scroll-margin-top: 90px; /* keeps panel visible below a fixed navbar when auto-scrolled into view */
+  background-color: #0a0a0a;
+  border: 1px solid rgba(34, 116, 197, 0.4);
+  border-radius: 10px;
+  padding: 22px 24px;
+  animation: panelFadeIn 0.25s ease;
+}
+
+@keyframes panelFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.channels-panel-header {
+  border-bottom: 1px solid #2a2a2a;
+  padding-bottom: 14px;
+  margin-bottom: 14px;
+}
+
+.channels-panel-title {
+  color: var(--theme-color);
+  font-size: 18px;
+  font-weight: 800;
+  margin: 0;
+  flex-grow: 1;
+}
+
+.channels-panel-close {
+  background: none;
+  border: none;
+  color: #a3a3a3;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 4px 8px;
+  transition: color 0.2s ease;
+}
+
+.channels-panel-close:hover {
+  color: #ffffff;
+}
+
+.channels-panel-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  columns: 2;
+  column-gap: 32px;
+}
+
+.channels-panel-item {
+  color: #d9d9d9;
+  font-size: 14.5px;
+  line-height: 2.1;
+  break-inside: avoid;
+}
+
+.channel-code {
+  color: #6b7280;
+}
+
+/* =========================================================
+   Responsive layout — handled entirely with media queries.
+   ========================================================= */
+
+@media (max-width: 900px) {
+  .channels-grid {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 16px;
+  }
+
+  .channels-panel-list {
+    columns: 1;
+  }
+}
+
+@media (max-width: 560px) {
+  .channels-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .channels-title {
+    font-size: 24px;
+  }
+
+  .channel-country-btn {
+    font-size: 13px;
+  }
+}

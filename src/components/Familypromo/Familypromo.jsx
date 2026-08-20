@@ -9,13 +9,13 @@ function FamilyPromo() {
         {/* Left side - text content */}
         <div className="family-promo-text flex flex-col px-6 md:px-16">
           <h2 className="family-promo-title">
-            8K IPTV – The Best IPTV for Families + KIDS
+            GTV – The Best GTV for Families + KIDS
           </h2>
 
           <p className="family-promo-paragraph">
-            Our live IPTV streaming service is ideal for families with young
+            Our live GTV streaming service is ideal for families with young
             children. With{" "}
-            <span className="family-promo-highlight">8K IPTV</span>,
+            <span className="family-promo-highlight">GTV</span>,
             you&apos;ll have access to a vast collection of kid-friendly
             content, including animated series and educational shows. Keep
             your little ones entertained and learning—subscribe now!
@@ -53,7 +53,7 @@ function FamilyPromo() {
         <div className="family-promo-image-wrap flex items-center justify-center">
           <img
             src={kidsImg}
-            alt="8K IPTV kids and family content"
+            alt="GTV kids and family content"
             className="family-promo-image"
           />
         </div>

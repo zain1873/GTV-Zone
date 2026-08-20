@@ -1,0 +1,75 @@
+
+.channel-slider {
+  background-color: #000000;
+  overflow: hidden;
+  padding: 14px 0;
+}
+
+/* ---------- Sliding track ---------- */
+
+.channel-slider-track {
+  width: max-content;
+  gap: 14px;
+  animation: channelScroll 22s linear infinite;
+}
+
+/* Pause the animation when hovering, so users can look at a logo */
+.channel-slider:hover .channel-slider-track {
+  animation-play-state: paused;
+}
+
+@keyframes channelScroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* ---------- Logo box ---------- */
+
+.channel-slider-box {
+  flex-shrink: 0;
+  width: 220px;
+  height: 90px;
+  background-color: #0a0a0a;
+  border: 1.5px solid var(--theme-color);
+  border-radius: 4px;
+  padding: 12px;
+}
+
+.channel-slider-img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+/* =========================================================
+   Responsive layout — handled entirely with media queries.
+   ========================================================= */
+
+@media (max-width: 768px) {
+  .channel-slider-box {
+    width: 170px;
+    height: 74px;
+    padding: 10px;
+  }
+
+  .channel-slider-track {
+    animation-duration: 18s;
+  }
+}
+
+@media (max-width: 480px) {
+  .channel-slider-box {
+    width: 140px;
+    height: 62px;
+    padding: 8px;
+  }
+
+  .channel-slider-track {
+    gap: 10px;
+    animation-duration: 14s;
+  }
+}
