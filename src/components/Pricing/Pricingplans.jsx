@@ -21,10 +21,10 @@ const PLANS_BY_CONNECTION = {
     { months: 12, price: 65 },
   ],
   3: [
-    { months: 1, price: 19.99 },
-    { months: 3, price: 49.99 },
-    { months: 6, price: 79.99 },
-    { months: 12, price: 99.99 },
+    { months: 1, price: 30 },
+    { months: 3, price: 32 },
+    { months: 6, price: 42 },
+    { months: 12, price: 80 },
   ],
 };
 

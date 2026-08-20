@@ -125,7 +125,7 @@ function Navbar() {
         </ul>
 
         <a href="#client-area" className="client-area-btn desktop-only">
-          Client Area
+          Lets Connect
         </a>
 
         <button className="hamburger-btn" onClick={toggleMenu}>
@@ -238,7 +238,7 @@ function Navbar() {
                 onClick={toggleMenu}
                 className="client-area-btn"
               >
-                Client Area
+                Lets Connect
               </a>
             </li>
           </ul>

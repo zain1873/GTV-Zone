@@ -139,8 +139,8 @@
 }
 
 .contact-main-grid {
-  display: grid;
-  grid-template-columns: 1fr 360px;
+  display: flex;
+  justify-content: center;
   gap: 40px;
   align-items: start;
 }
