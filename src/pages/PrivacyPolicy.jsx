@@ -55,7 +55,7 @@ const SECTIONS = [
     heading: "5. Data Security",
     blocks: [
       "We use reasonable technical and organizational measures to protect your personal information from unauthorized access, loss, or misuse, including encrypted connections and access controls.",
-      "While we work hard to protect your data, no system is entirely risk-free. If you believe your account has been compromised, contact us immediately at support@iptv.co.",
+      "While we work hard to protect your data, no system is entirely risk-free. If you believe your account has been compromised, contact us immediately at livexatv.info@gmail.com.",
     ],
   },
   {
@@ -79,7 +79,7 @@ const SECTIONS = [
     heading: "8. Your Rights",
     blocks: [
       "You have the right to access, correct, or delete the personal information we hold about you. You may also object to certain uses of your data or ask us to restrict processing.",
-      "To exercise any of these rights, email support@iptv.co with your request. We will respond within a reasonable timeframe.",
+      "To exercise any of these rights, email livexatv.info@gmail.com with your request. We will respond within a reasonable timeframe.",
     ],
   },
   {
@@ -109,7 +109,7 @@ const SECTIONS = [
     blocks: [
       "If you have any questions or requests about this Privacy Policy, or about your personal data, please reach out to:",
       [
-        "Email: support@iptv.co",
+        "Email: livexatv.info@gmail.com",
         "WhatsApp: +44 7346 521271",
       ],
     ],

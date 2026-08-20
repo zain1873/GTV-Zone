@@ -15,8 +15,8 @@ const CONTACT_INFO = [
   {
     icon: <FaEnvelope aria-hidden="true" />,
     label: "Email Us",
-    value: "support@iptv.co",
-    href: "mailto:support@iptv.co",
+    value: "livexatv.info@gmail.com",
+    href: "mailto:livexatv.info@gmail.com",
   },
 
   {
@@ -29,7 +29,7 @@ const CONTACT_INFO = [
     icon: <FaClock aria-hidden="true" />,
     label: "Support Hours",
     value: "24/7 — 365 days",
-    href: "mailto:support@gtv.co",
+    href: "mailto:livexatv.info@gmail.com",
   },
 ];
 

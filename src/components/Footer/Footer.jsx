@@ -30,11 +30,11 @@ function Footer() {
 
             <div className="footer-contact">
               <a
-                href="mailto:support@gtv.co"
+                href="mailto:livexatv.info@gmail.com"
                 className="contact-item contact-email"
                 aria-label="Email GTV support"
               >
-                <span className="contact-email-text">support@gtv.co</span>
+                <span className="contact-email-text">livexatv.info@gmail.com</span>
               </a>
 
               {/* <a

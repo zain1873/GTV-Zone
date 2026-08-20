@@ -35,7 +35,7 @@ const SECTIONS = [
     blocks: [
       "To request a refund, contact our support team with your account email, order details, and a description of the issue:",
       [
-        "Email: support@iptv.co",
+        "Email: livexatv.info@gmail.com",
         "WhatsApp: +44 7346 521271",
       ],
       "Once your request is verified, we will issue a refund to the original payment method or as service credits, whichever applies.",
@@ -89,7 +89,7 @@ const SECTIONS = [
     blocks: [
       "If you need help with a refund or have any questions, reach out to our support team:",
       [
-        "Email: support@iptv.co",
+        "Email: livexatv.info@gmail.com",
         "WhatsApp: +44 7346 521271",
       ],
     ],

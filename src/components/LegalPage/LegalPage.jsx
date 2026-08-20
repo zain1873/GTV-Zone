@@ -94,8 +94,8 @@ function LegalPage({ eyebrow, title, intro, updated, sections, children }) {
             <div className="legal-contact-note">
               <p>
                 Questions about this policy? Contact our support team at{" "}
-                <a href="mailto:support@iptv.co" className="legal-inline-link">
-                  support@iptv.co
+                <a href="mailto:livexatv.info@gmail.com" className="legal-inline-link">
+                  livexatv.info@gmail.com
                 </a>{" "}
                 or chat with us on WhatsApp anytime.
               </p>

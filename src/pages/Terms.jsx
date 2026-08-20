@@ -118,7 +118,7 @@ const SECTIONS = [
     blocks: [
       "Questions or concerns about these Terms can be sent to:",
       [
-        "Email: support@iptv.co",
+        "Email: livexatv.info@gmail.com",
         "WhatsApp: +44 7346 521271",
       ],
     ],
