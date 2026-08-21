@@ -124,7 +124,12 @@ function Navbar() {
           </li>
         </ul>
 
-        <a href="#client-area" className="client-area-btn desktop-only">
+        <a
+          href="https://wa.me/447346521271"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="client-area-btn desktop-only"
+        >
           Lets Connect
         </a>
 
@@ -234,7 +239,9 @@ function Navbar() {
             </li>
             <li>
               <a
-                href="#client-area"
+                href="https://wa.me/447346521271"
+                target="_blank"
+                rel="noopener noreferrer"
                 onClick={toggleMenu}
                 className="client-area-btn"
               >
