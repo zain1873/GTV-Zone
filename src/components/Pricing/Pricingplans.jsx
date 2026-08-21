@@ -28,35 +28,15 @@ const PLANS_BY_CONNECTION = {
   ],
 };
 
-const FEATURES = [
-  "100% No Buffering / No Freezing",
-  "Daily Updates for Channels, Movies, and TV Shows",
-  "Free Access to Our VIP Premium Application",
-  "+35,000 TV Channels",
-  "+120,000 Movies",
-  "+31,000 Series",
-  "All PPV and Premium Channels",
-  "All 24/7 Channels",
-  "TV Guide (EPG)",
-  "99.9% Performance",
-  "Access All International Channels",
-  "Compatible with All Devices",
-  "Instant Activation!",
-  "24/7 Customer Support",
-  "30-days money-back guarantee",
-];
-
 // The 12 Month plan is highlighted as the best value
 const HIGHLIGHTED_MONTHS = 12;
 
 // Builds the pre-filled WhatsApp message for the exact selected plan.
-// Uses the real plan details (connections, duration, price) and features
-// defined above so the message always reflects what the user picked.
+// Uses the real plan details (connections, duration, price) so the message
+// always reflects what the user picked.
 function buildWhatsAppMessage(plan, connectionCount) {
   const connectionLabel = `${connectionCount} Connection${connectionCount > 1 ? "s" : ""}`;
   const monthsLabel = `${plan.months} Month${plan.months > 1 ? "s" : ""}`;
-
-  const featureLines = FEATURES.map((feature) => `   ✅ ${feature}`).join("\n");
 
   return [
     "Hi GTV,",
@@ -66,9 +46,6 @@ function buildWhatsAppMessage(plan, connectionCount) {
     `   • Plan: ${monthsLabel} – ${connectionLabel}`,
     `   • Duration: ${monthsLabel}`,
     `   • Price: £${plan.price}`,
-    "",
-    "Included Features:",
-    featureLines,
     "",
     "Please confirm availability and guide me through the payment. Thank you!",
   ].join("\n");
@@ -142,17 +119,6 @@ function PricingPlans() {
                 <span className="pricing-price-currency">£</span>
                 <span className="pricing-price-amount">{plan.price}</span>
               </div>
-
-              <ul className="pricing-features">
-                {FEATURES.map((feature) => (
-                  <li key={feature} className="pricing-feature">
-                    <span className="pricing-feature-icon" aria-hidden="true">
-                      ✓
-                    </span>
-                    <span>{feature}</span>
-                  </li>
-                ))}
-              </ul>
 
               <a
                 className="pricing-buy-btn"
