@@ -49,6 +49,31 @@ const FEATURES = [
 // The 12 Month plan is highlighted as the best value
 const HIGHLIGHTED_MONTHS = 12;
 
+// Builds the pre-filled WhatsApp message for the exact selected plan.
+// Uses the real plan details (connections, duration, price) and features
+// defined above so the message always reflects what the user picked.
+function buildWhatsAppMessage(plan, connectionCount) {
+  const connectionLabel = `${connectionCount} Connection${connectionCount > 1 ? "s" : ""}`;
+  const monthsLabel = `${plan.months} Month${plan.months > 1 ? "s" : ""}`;
+
+  const featureLines = FEATURES.map((feature) => `   ✅ ${feature}`).join("\n");
+
+  return [
+    "Hi GTV,",
+    "",
+    "I'd like to purchase the following plan:",
+    "",
+    `   • Plan: ${monthsLabel} – ${connectionLabel}`,
+    `   • Duration: ${monthsLabel}`,
+    `   • Price: £${plan.price}`,
+    "",
+    "Included Features:",
+    featureLines,
+    "",
+    "Please confirm availability and guide me through the payment. Thank you!",
+  ].join("\n");
+}
+
 function PricingPlans() {
   // Track which connections tab is currently active
   const [activeConnection, setActiveConnection] = useState(1);
@@ -132,7 +157,7 @@ function PricingPlans() {
               <a
                 className="pricing-buy-btn"
                 href={`https://wa.me/447346521271?text=${encodeURIComponent(
-                  `Hi GTV, I'd like to buy the ${activeConnection} connection ${plan.months} month plan for £${plan.price}.`
+                  buildWhatsAppMessage(plan, activeConnection)
                 )}`}
                 target="_blank"
                 rel="noopener noreferrer"
