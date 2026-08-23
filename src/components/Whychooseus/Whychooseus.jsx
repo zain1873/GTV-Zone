@@ -76,22 +76,45 @@ function WhyChooseUs() {
 
         {/* Steps grid */}
         <div className="why-choose-grid grid gap-8">
-          {STEPS.map((step) => (
-            <article key={step.number} className="why-choose-card">
-              {/* Small number badge in the corner */}
-              <span className="why-choose-number">{step.number}</span>
+          {STEPS.map((step) =>
+            step.number === 2 ? (
+              <article key={step.number} className="why-choose-card">
+                {/* Small number badge in the corner */}
+                <span className="why-choose-number">{step.number}</span>
 
-              <div className="why-choose-icon flex items-center justify-center">
-                {step.icon}
-              </div>
+                <div className="why-choose-icon flex items-center justify-center">
+                  {step.icon}
+                </div>
 
-              <h3 className="why-choose-card-title">
-                {step.number}. {step.title}
-              </h3>
+                <h3 className="why-choose-card-title">
+                  {step.number}. {step.title}
+                </h3>
 
-              <p className="why-choose-card-text">{step.description}</p>
-            </article>
-          ))}
+                <p className="why-choose-card-text">{step.description}</p>
+              </article>
+            ) : (
+              <a
+                key={step.number}
+                className="why-choose-card"
+                href="https://wa.me/447346521271"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {/* Small number badge in the corner */}
+                <span className="why-choose-number">{step.number}</span>
+
+                <div className="why-choose-icon flex items-center justify-center">
+                  {step.icon}
+                </div>
+
+                <h3 className="why-choose-card-title">
+                  {step.number}. {step.title}
+                </h3>
+
+                <p className="why-choose-card-text">{step.description}</p>
+              </a>
+            )
+          )}
         </div>
       </div>
     </section>
