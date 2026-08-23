@@ -71,9 +71,17 @@ function Reseller() {
                   ))}
                 </ul>
 
-                <button type="button" className="reseller-buy-btn">
+                <a
+                  className="reseller-buy-btn"
+                  href={`https://wa.me/447346521271?text=${encodeURIComponent(
+                    `Hi GTV! I would like to buy:\n${plan.credits} credits - $${plan.price}`
+                  )}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`Buy the ${plan.credits} credits package on WhatsApp`}
+                >
                   Buy Now
-                </button>
+                </a>
               </article>
             ))}
           </div>
