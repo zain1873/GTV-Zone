@@ -53,16 +53,13 @@ const HIGHLIGHTED_MONTHS = 12;
 // Keeps the message short and clean: only the plan title/name and the
 // selected month duration are included (no description, features, or price).
 function buildWhatsAppMessage(plan, connectionCount) {
+  const monthsLabel = `${plan.months} month${plan.months > 1 ? "s" : ""}`;
   const connectionLabel = `${connectionCount} Connection${connectionCount > 1 ? "s" : ""}`;
-  const monthsLabel = `${plan.months} Month${plan.months > 1 ? "s" : ""}`;
 
   return [
-    "Hi GTV,",
-    "",
-    "I'd like to purchase the following plan:",
-    "",
-    `   • Plan: ${monthsLabel} – ${connectionLabel}`,
-    `   • Duration: ${monthsLabel}`,
+    "Hi GTV!",
+    "I would like to buy:",
+    `${monthsLabel} Subscription - ${connectionLabel}`,
   ].join("\n");
 }
 
