@@ -176,20 +176,11 @@ function Navbar() {
           <ul className="flex flex-col items-center gap-6">
             <li>
               <a
-                href="#home"
+                href="/"
                 onClick={toggleMenu}
                 className={navLinkClass("home")}
               >
                 HOME
-              </a>
-            </li>
-            <li>
-              <a
-                href="#free-trial"
-                onClick={toggleMenu}
-                className={navLinkClass("free-trial")}
-              >
-                FREE TRIAL
               </a>
             </li>
             <li>
@@ -203,7 +194,7 @@ function Navbar() {
             </li>
             <li>
               <a
-                href="#channels"
+                href="/channels"
                 onClick={toggleMenu}
                 className={navLinkClass("channels")}
               >
@@ -221,20 +212,11 @@ function Navbar() {
             </li>
             <li>
               <a
-                href="#reseller"
+                href="/reseller"
                 onClick={toggleMenu}
                 className={navLinkClass("reseller")}
               >
                 RESELLER
-              </a>
-            </li>
-            <li>
-              <a
-                href="#our-app"
-                onClick={toggleMenu}
-                className={navLinkClass("our-app")}
-              >
-                OUR APP
               </a>
             </li>
             <li>

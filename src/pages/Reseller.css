@@ -142,6 +142,7 @@
 
 .reseller-buy-btn {
   width: calc(100% - 44px);
+  text-align: center;
   margin: 8px 22px 28px;
   background-color: transparent;
   border: 1.5px solid var(--theme-color);
