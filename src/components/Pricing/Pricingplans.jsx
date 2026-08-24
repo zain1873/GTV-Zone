@@ -43,7 +43,6 @@ const FEATURES = [
   "Compatible with All Devices",
   "Instant Activation!",
   "24/7 Customer Support",
-  "30-days money-back guarantee",
 ];
 
 // The 12 Month plan is highlighted as the best value

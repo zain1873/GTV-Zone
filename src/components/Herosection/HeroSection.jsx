@@ -42,8 +42,8 @@ function HeroSection() {
           pricing, instant access. Don&apos;t wait—subscribe today!
         </p>
 
-        <a href="#free-trial" className="free-trial-btn">
-          Free Trial 24H
+        <a href="/contact" className="free-trial-btn">
+          Contact
         </a>
       </div>
     </header>
