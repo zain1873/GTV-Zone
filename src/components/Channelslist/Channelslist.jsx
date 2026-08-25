@@ -281,6 +281,34 @@ const COUNTRIES = [
     code: "NI",
     channels: ["Canal 2 HD", "Canal 4 HD", "Canal 10 HD", "Telenica HD", "Canal 6 HD", "Canal 13 HD"],
   },
+  {
+    id: "india",
+    flag: "🇮🇳",
+    name: "INDIA",
+    code: "IN",
+    channels: ["DD National HD", "Star Plus HD", "Colors HD", "Zee TV", "Sony TV", "Star Sports 1 HD", "Aaj Tak", "NDTV 24x7 HD", "Times Now HD", "Zee Cinema HD", "Sony SAB HD", "Star Gold HD", "Zee Marathi HD"],
+  },
+  {
+    id: "south-india",
+    flag: "📺",
+    name: "SOUTH INDIA",
+    code: "SI",
+    channels: ["Sun TV HD", "Koch TV", "Star Vijay HD", "Zee Tamil HD", "Gemini TV HD", "Sun Music HD", "Asianet HD", "Mazhavil Manorama HD", "Colors Super HD", "Raj TV HD", "Kalaignar TV HD", "Jaya TV HD"],
+  },
+  {
+    id: "ireland",
+    flag: "🇮🇪",
+    name: "IRELAND",
+    code: "IE",
+    channels: ["RTÉ One HD", "RTÉ2 HD", "Virgin Media One HD", "TG4 HD", "Virgin Media Two HD", "RTÉ News HD", "RTÉ Jr HD", "Virgin Media Three HD"],
+  },
+  {
+    id: "turkey",
+    flag: "🇹🇷",
+    name: "TURKEY",
+    code: "TR",
+    channels: ["ATV HD", "Show TV HD", "Star TV HD", "Fox TV HD", "TRT 1 HD", "Kanal D HD", "TRT Haber HD", "Cine5", "360 HD", "Kanal 7 HD", "Beyaz TV HD", "TV8 HD"],
+  },
 ];
 
 function ChannelsList() {

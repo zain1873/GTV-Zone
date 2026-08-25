@@ -3,12 +3,12 @@ import LegalPage from "../components/LegalPage/LegalPage";
 
 const SECTIONS = [
   {
-    id: "introduction",
-    heading: "1. Introduction",
-    blocks: [
-      "This Refund Policy explains the circumstances in which GTV (\"we\", \"our\", \"us\") will issue a refund for subscription plans, credits, or add-ons purchased through our service.",
-      "We want you to be happy with GTV. Please read this policy before you purchase, and contact us if you have any questions.",
-    ],
+  id: "introduction",
+  heading: "1. Introduction",
+  blocks: [
+    "This Subscription Policy explains how subscriptions to GTV work, including plan selection, billing, renewals, cancellations, and access to our services.",
+    "By purchasing or subscribing to a GTV plan, you agree to the terms outlined in this policy. Please read this policy carefully before purchasing a subscription and contact us if you have any questions.",
+  ],
   },
   {
     id: "free-trial",
@@ -79,8 +79,8 @@ const SECTIONS = [
   {
     id: "changes",
     heading: "9. Changes to this Policy",
-    blocks: [
-      "We may update this Refund Policy from time to time. Any changes will be posted on this page with an updated date below.",
+      blocks: [
+      "We may update this Subscription Policy from time to time. Any changes will be posted on this page, and the 'Last updated' date will be revised accordingly.",
     ],
   },
   {
@@ -99,11 +99,11 @@ const SECTIONS = [
 function RefundPolicy() {
   return (
     <LegalPage
-      eyebrow="Refund Policy"
-      title="Our Refund Policy"
-      intro="Read about the cases where you may be eligible for a refund on your GTV subscription, credits, or purchases, and how to request one."
-      updated="Last updated: August 2026"
-      sections={SECTIONS}
+        eyebrow="Privacy Policy"
+        title="Your Privacy Matters"
+        intro="Learn how GTV collects, uses, stores, and protects your personal information when you use our platform and services."
+        updated="Last updated: August 2026"
+        sections={SECTIONS}
     />
   );
 }

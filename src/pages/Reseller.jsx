@@ -56,7 +56,7 @@ function Reseller() {
                 </div>
 
                 <div className="reseller-price">
-                  <span className="reseller-price-currency">$</span>
+                  <span className="reseller-price-currency">£</span>
                   <span className="reseller-price-amount">{plan.price}</span>
                 </div>
 

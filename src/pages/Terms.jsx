@@ -61,10 +61,10 @@ const SECTIONS = [
   {
     id: "renewal-cancellation",
     heading: "7. Renewal & Cancellation",
-    blocks: [
-      "Subscriptions renew automatically for their billing period unless you cancel before the renewal date.",
-      "You can cancel your subscription at any time through the client area or by contacting support. If you cancel, access continues until the end of the paid period.",
-      "No partial refunds are given for unused subscription time, unless stated under our Refund Policy.",
+      blocks: [
+      "Subscriptions renew automatically according to the selected billing period unless you cancel before the renewal date.",
+      "You can cancel your subscription at any time through the client area or by contacting support. If you cancel, your access will continue until the end of the current paid billing period.",
+      "Cancellation does not automatically result in a refund for any unused portion of the current subscription period.",
     ],
   },
   {
