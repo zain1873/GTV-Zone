@@ -98,9 +98,7 @@ function Footer() {
               <li>
                 <a href="/terms">Terms &amp; Conditions</a>
               </li>
-              <li>
-                <a href="/refund-policy">Refund Policy</a>
-              </li>
+  
               <li>
                 <a href="/contact">Contact Us</a>
               </li>
