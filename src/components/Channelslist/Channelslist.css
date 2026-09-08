@@ -44,7 +44,11 @@
 }
 
 .channel-flag {
+  /* Windows' Segoe UI Emoji has no country-flag glyphs, so put a font
+     that does (Noto Color Emoji) ahead of the system emoji fonts. */
+  font-family: 'Noto Color Emoji', 'Apple Color Emoji', 'Segoe UI Emoji', sans-serif;
   font-size: 16px;
+  line-height: 1;
 }
 
 /* ---------- Channels accordion panel ---------- */
