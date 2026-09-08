@@ -11,7 +11,6 @@ function getActiveKey(location) {
   const hash = (location.hash || "").replace("#", "");
   const sectionKeys = {
     home: "home",
-    "free-trial": "free-trial",
     pricing: "pricing",
     channels: "channels",
     setup: "setup",

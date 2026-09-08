@@ -12,7 +12,6 @@ const PLANS = [
 ];
 
 const FEATURES = [
-  "24h Trial = 0 credit",
   "1 month : 1 credit",
   "3 month : 3 credits",
   "6 month : 6 credits",

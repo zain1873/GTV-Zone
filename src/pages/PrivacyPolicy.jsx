@@ -22,7 +22,7 @@ const SECTIONS = [
         "Usage information: non-identifying technical data such as device type, app version, and streaming performance so we can deliver a stable service.",
       ],
       { subheading: "Information you provide directly" },
-      "You provide most of this information when you register, purchase a plan, contact support, or sign up for a free trial.",
+      "You provide most of this information when you register, purchase a plan, or contact support.",
       { subheading: "Information we collect automatically" },
       "When you use our apps or website, we may automatically collect technical data to keep the service running smoothly and to prevent unauthorized access.",
     ],
@@ -33,7 +33,7 @@ const SECTIONS = [
     blocks: [
       "We use the information we collect to:",
       [
-        "Create, manage, and activate your subscription and free trials.",
+        "Create, manage, and activate your subscription.",
         "Process your payments securely and prevent fraud or unauthorized access.",
         "Provide customer support and respond to your questions.",
         "Send you service updates, account notices, and (with your consent) promotional offers.",
@@ -55,7 +55,7 @@ const SECTIONS = [
     heading: "5. Data Security",
     blocks: [
       "We use reasonable technical and organizational measures to protect your personal information from unauthorized access, loss, or misuse, including encrypted connections and access controls.",
-      "While we work hard to protect your data, no system is entirely risk-free. If you believe your account has been compromised, contact us immediately at livexatv.info@gmail.com.",
+      "While we work hard to protect your data, no system is entirely immune to risk. If you believe your account has been compromised, contact us immediately at livexatv.info@gmail.com.",
     ],
   },
   {

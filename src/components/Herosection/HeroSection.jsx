@@ -42,7 +42,7 @@ function HeroSection() {
           pricing, instant access. Don&apos;t wait—subscribe today!
         </p>
 
-        <a href="/contact" className="free-trial-btn">
+        <a href="/contact" className="contact-btn">
           Contact
         </a>
       </div>

@@ -6,7 +6,7 @@ import "./Channelslist.css";
 // row-by-row order as the original screenshot (3 per row).
 // "code" is the |XX| prefix shown inside the channel list.
 // Channel names are the well-known public broadcasters for
-// each country/region - feel free to trim or extend any list.
+// each country/region - trim or extend any list as needed.
 // -----------------------------
 const COUNTRIES = [
   {
@@ -294,6 +294,13 @@ const COUNTRIES = [
     name: "SOUTH INDIA",
     code: "SI",
     channels: ["Sun TV HD", "Koch TV", "Star Vijay HD", "Zee Tamil HD", "Gemini TV HD", "Sun Music HD", "Asianet HD", "Mazhavil Manorama HD", "Colors Super HD", "Raj TV HD", "Kalaignar TV HD", "Jaya TV HD"],
+  },
+  {
+    id: "pakistan",
+    flag: "🇵🇰",
+    name: "PAKISTAN",
+    code: "PK",
+    channels: ["PTV Home HD", "PTV News HD", "PTV Sports HD", "ARY Digital HD", "ARY News HD", "Geo TV HD", "Geo News HD", "Hum TV HD", "Express Entertainment HD", "Express News HD", "Dunya News HD", "Samaa TV HD", "AAJ News HD", "A Sports HD"],
   },
   {
     id: "ireland",

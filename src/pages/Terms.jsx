@@ -40,16 +40,8 @@ const SECTIONS = [
     ],
   },
   {
-    id: "free-trial",
-    heading: "5. Free Trial",
-    blocks: [
-      "Eligible customers may be offered a free trial period at no cost and/or a 24-hour trial that costs no credits for resellers. Each customer is generally limited to one free trial.",
-      "The trial period is subject to availability, and we may require you to complete certain steps to qualify. At the end of the trial period, the applicable paid plan begins unless otherwise stated.",
-    ],
-  },
-  {
     id: "billing",
-    heading: "6. Billing & Payment",
+    heading: "5. Billing & Payment",
     blocks: [
       "By subscribing, you agree to pay all charges associated with your chosen plan or channel package.",
       "Payment is due at the time your subscription is activated or renewed. We accept the payment methods shown at checkout (including reseller credits).",
@@ -60,7 +52,7 @@ const SECTIONS = [
   },
   {
     id: "renewal-cancellation",
-    heading: "7. Renewal & Cancellation",
+    heading: "6. Renewal & Cancellation",
       blocks: [
       "Subscriptions renew automatically according to the selected billing period unless you cancel before the renewal date.",
       "You can cancel your subscription at any time through the client area or by contacting support. If you cancel, your access will continue until the end of the current paid billing period.",
@@ -69,7 +61,7 @@ const SECTIONS = [
   },
   {
     id: "acceptable-use",
-    heading: "8. Acceptable Use",
+    heading: "7. Acceptable Use",
     blocks: [
       "You may use the service for personal, non-commercial streaming within the limits of your plan. You agree not to:",
       [
@@ -83,7 +75,7 @@ const SECTIONS = [
   },
   {
     id: "intellectual-property",
-    heading: "9. Intellectual Property",
+    heading: "8. Intellectual Property",
     blocks: [
       "All content available through GTV, including channels, logos, text, and software, is the property of its respective owners and is licensed to us for streaming.",
       "You may not copy, record, or redistribute the content without permission.",
@@ -91,7 +83,7 @@ const SECTIONS = [
   },
   {
     id: "limitation-of-liability",
-    heading: "10. Limitation of Liability",
+    heading: "9. Limitation of Liability",
     blocks: [
       "The service is provided \"as is\", without warranties of any kind beyond the streaming service delivered.",
       "To the fullest extent permitted by law, GTV is not liable for any indirect, incidental, special, or consequential damages arising from your use of the service, including streaming interruptions or temporary outages.",
@@ -99,7 +91,7 @@ const SECTIONS = [
   },
   {
     id: "termination",
-    heading: "11. Termination & Suspension",
+    heading: "10. Termination & Suspension",
     blocks: [
       "We may suspend or terminate your access at any time for violation of these Terms, fraudulent activity, or conduct that threatens the service or other users.",
       "You may terminate your subscription at any time. In all cases, obligations that arose before cancellation remain in effect.",
@@ -107,14 +99,14 @@ const SECTIONS = [
   },
   {
     id: "changes-to-terms",
-    heading: "12. Changes to These Terms",
+    heading: "11. Changes to These Terms",
     blocks: [
       "We may update these Terms to reflect changes in our service, licensing, or applicable law. We will post any changes on this page and, for significant updates, inform you through our service.",
     ],
   },
   {
     id: "contact",
-    heading: "13. Contact Us",
+    heading: "12. Contact Us",
     blocks: [
       "Questions or concerns about these Terms can be sent to:",
       [

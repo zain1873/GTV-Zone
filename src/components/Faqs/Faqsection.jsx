@@ -18,11 +18,7 @@ const FAQS = [
     answer:
       "Activation is usually instant to 15 minutes after your order is confirmed. If it's taking longer than expected, reach out to us on WhatsApp and we'll speed things up.",
   },
-  {
-    question: "Can I test the service before subscribing?",
-    answer:
-      "Yes! We offer a free 24 hour trial so you can test channel quality, stability and device compatibility before choosing a plan.",
-  },
+
   {
     question: "What devices are compatible with GTV?",
     answer:
@@ -33,11 +29,7 @@ const FAQS = [
     answer:
       "Our servers are optimized for 99.9% uptime and smooth streaming. As long as you have a stable internet connection, you shouldn't experience buffering or freezing.",
   },
-  {
-    question: "Do you offer support and a money-back guarantee?",
-    answer:
-      "Yes, we offer 24/7 customer support and a 30-day money-back guarantee on all subscription plans, so you can subscribe with confidence.",
-  },
+
 ];
 
 function FaqSection() {
