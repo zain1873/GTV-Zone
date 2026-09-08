@@ -11,6 +11,7 @@ import "./Channelslist.css";
 const COUNTRIES = [
   {
     id: "france",
+    iso: "fr",
     flag: "🇫🇷",
     name: "FRANCE",
     code: "FR",
@@ -25,6 +26,7 @@ const COUNTRIES = [
   },
   {
     id: "iran",
+    iso: "ir",
     flag: "🇮🇷",
     name: "IRAN",
     code: "IR",
@@ -32,6 +34,7 @@ const COUNTRIES = [
   },
   {
     id: "belgium",
+    iso: "be",
     flag: "🇧🇪",
     name: "BELGIUM",
     code: "BE",
@@ -39,6 +42,7 @@ const COUNTRIES = [
   },
   {
     id: "finland",
+    iso: "fi",
     flag: "🇫🇮",
     name: "FINLAND",
     code: "FI",
@@ -46,6 +50,7 @@ const COUNTRIES = [
   },
   {
     id: "italy",
+    iso: "it",
     flag: "🇮🇹",
     name: "ITALY",
     code: "IT",
@@ -73,6 +78,7 @@ const COUNTRIES = [
   },
   {
     id: "usa",
+    iso: "us",
     flag: "🇺🇸",
     name: "USA",
     code: "US",
@@ -80,6 +86,7 @@ const COUNTRIES = [
   },
   {
     id: "georgia",
+    iso: "ge",
     flag: "🇬🇪",
     name: "GEORGIA",
     code: "GE",
@@ -87,6 +94,7 @@ const COUNTRIES = [
   },
   {
     id: "montenegro",
+    iso: "me",
     flag: "🇲🇪",
     name: "MONTENEGRO",
     code: "ME",
@@ -94,6 +102,7 @@ const COUNTRIES = [
   },
   {
     id: "uk",
+    iso: "gb",
     flag: "🇬🇧",
     name: "UK",
     code: "UK",
@@ -101,6 +110,7 @@ const COUNTRIES = [
   },
   {
     id: "germany",
+    iso: "de",
     flag: "🇩🇪",
     name: "GERMANY",
     code: "DE",
@@ -115,6 +125,7 @@ const COUNTRIES = [
   },
   {
     id: "afghanistan",
+    iso: "af",
     flag: "🇦🇫",
     name: "AFGHANISTAN",
     code: "AF",
@@ -122,6 +133,7 @@ const COUNTRIES = [
   },
   {
     id: "greece",
+    iso: "gr",
     flag: "🇬🇷",
     name: "GREECE",
     code: "GR",
@@ -143,6 +155,7 @@ const COUNTRIES = [
   },
   {
     id: "albania",
+    iso: "al",
     flag: "🇦🇱",
     name: "ALBANIA",
     code: "AL",
@@ -150,6 +163,7 @@ const COUNTRIES = [
   },
   {
     id: "guatemala",
+    iso: "gt",
     flag: "🇬🇹",
     name: "GUATEMALA",
     code: "GT",
@@ -157,6 +171,7 @@ const COUNTRIES = [
   },
   {
     id: "honduras",
+    iso: "hn",
     flag: "🇭🇳",
     name: "HONDURAS",
     code: "HN",
@@ -164,6 +179,7 @@ const COUNTRIES = [
   },
   {
     id: "macedonia",
+    iso: "mk",
     flag: "🇲🇰",
     name: "MACEDONIA",
     code: "MK",
@@ -171,6 +187,7 @@ const COUNTRIES = [
   },
   {
     id: "hong-kong",
+    iso: "hk",
     flag: "🇭🇰",
     name: "HONG KONG",
     code: "HK",
@@ -178,6 +195,7 @@ const COUNTRIES = [
   },
   {
     id: "malaysia",
+    iso: "my",
     flag: "🇲🇾",
     name: "MALAYSIA",
     code: "MY",
@@ -192,6 +210,7 @@ const COUNTRIES = [
   },
   {
     id: "malta",
+    iso: "mt",
     flag: "🇲🇹",
     name: "MALTA",
     code: "MT",
@@ -199,6 +218,7 @@ const COUNTRIES = [
   },
   {
     id: "argentina",
+    iso: "ar",
     flag: "🇦🇷",
     name: "ARGENTINA",
     code: "AR",
@@ -206,6 +226,7 @@ const COUNTRIES = [
   },
   {
     id: "japan",
+    iso: "jp",
     flag: "🇯🇵",
     name: "JAPAN",
     code: "JP",
@@ -213,6 +234,7 @@ const COUNTRIES = [
   },
   {
     id: "mexico",
+    iso: "mx",
     flag: "🇲🇽",
     name: "MEXICO",
     code: "MX",
@@ -220,6 +242,7 @@ const COUNTRIES = [
   },
   {
     id: "armenia",
+    iso: "am",
     flag: "🇦🇲",
     name: "ARMENIA",
     code: "AM",
@@ -234,6 +257,7 @@ const COUNTRIES = [
   },
   {
     id: "korea",
+    iso: "kr",
     flag: "🇰🇷",
     name: "KOREA",
     code: "KO",
@@ -255,6 +279,7 @@ const COUNTRIES = [
   },
   {
     id: "netherland",
+    iso: "nl",
     flag: "🇳🇱",
     name: "NETHERLAND",
     code: "NL",
@@ -262,6 +287,7 @@ const COUNTRIES = [
   },
   {
     id: "australia",
+    iso: "au",
     flag: "🇦🇺",
     name: "AUSTRALIA",
     code: "AU",
@@ -269,6 +295,7 @@ const COUNTRIES = [
   },
   {
     id: "ukraine",
+    iso: "ua",
     flag: "🇺🇦",
     name: "UKRAINE",
     code: "UA",
@@ -276,6 +303,7 @@ const COUNTRIES = [
   },
   {
     id: "nicaragua",
+    iso: "ni",
     flag: "🇳🇮",
     name: "NICARAGUA",
     code: "NI",
@@ -283,6 +311,7 @@ const COUNTRIES = [
   },
   {
     id: "india",
+    iso: "in",
     flag: "🇮🇳",
     name: "INDIA",
     code: "IN",
@@ -297,6 +326,7 @@ const COUNTRIES = [
   },
   {
     id: "pakistan",
+    iso: "pk",
     flag: "🇵🇰",
     name: "PAKISTAN",
     code: "PK",
@@ -304,6 +334,7 @@ const COUNTRIES = [
   },
   {
     id: "ireland",
+    iso: "ie",
     flag: "🇮🇪",
     name: "IRELAND",
     code: "IE",
@@ -311,12 +342,32 @@ const COUNTRIES = [
   },
   {
     id: "turkey",
+    iso: "tr",
     flag: "🇹🇷",
     name: "TURKEY",
     code: "TR",
     channels: ["ATV HD", "Show TV HD", "Star TV HD", "Fox TV HD", "TRT 1 HD", "Kanal D HD", "TRT Haber HD", "Cine5", "360 HD", "Kanal 7 HD", "Beyaz TV HD", "TV8 HD"],
   },
 ];
+
+// Renders a country flag. Real flags come from an image so they look the same
+// on every OS - Windows has no colour glyphs for flag emoji, and iOS will not
+// reliably load a downloaded emoji font. Regions/packages (no ISO code) keep
+// the 📺 emoji, which every platform draws fine.
+function Flag({ country }) {
+  if (!country.iso) {
+    return <span className="channel-flag">{country.flag}</span>;
+  }
+  return (
+    <img
+      className="channel-flag-img"
+      src={`https://flagcdn.com/w40/${country.iso}.png`}
+      srcSet={`https://flagcdn.com/w80/${country.iso}.png 2x`}
+      alt=""
+      loading="lazy"
+    />
+  );
+}
 
 function ChannelsList() {
   // Tracks which country's channel list is currently open (null = none open)
@@ -363,7 +414,7 @@ function ChannelsList() {
               }
               onClick={() => handleCountryClick(country.id)}
             >
-              <span className="channel-flag">{country.flag}</span>-{" "}
+              <Flag country={country} />-{" "}
               {country.name}
             </button>
           ))}
@@ -373,7 +424,7 @@ function ChannelsList() {
         {selectedCountry && (
           <div className="channels-panel" ref={panelRef}>
             <div className="channels-panel-header flex items-center gap-2">
-              <span className="channel-flag">{selectedCountry.flag}</span>
+              <Flag country={selectedCountry} />
               <h3 className="channels-panel-title">{selectedCountry.name}</h3>
               <button
                 type="button"
