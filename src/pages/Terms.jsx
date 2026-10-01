@@ -111,7 +111,7 @@ const SECTIONS = [
       "Questions or concerns about these Terms can be sent to:",
       [
         "Email: livexatv.info@gmail.com",
-        "WhatsApp: +44 7346 521271",
+        "WhatsApp: +44 7479 706871",
       ],
     ],
   },

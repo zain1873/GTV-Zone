@@ -58,7 +58,7 @@ function Footer() {
                 <span className="contact-icon-wrap">
                   <FaWhatsapp className="contact-icon" aria-hidden="true" />
                 </span>
-                +44 7346 521271
+                +44 7479 706871
               </a>
             </div>
           </div>

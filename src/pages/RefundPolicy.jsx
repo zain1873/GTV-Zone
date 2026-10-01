@@ -28,7 +28,7 @@ const SECTIONS = [
       "To request a refund, contact our support team with your account email, order details, and a description of the issue:",
       [
         "Email: livexatv.info@gmail.com",
-        "WhatsApp: +44 7346 521271",
+        "WhatsApp: +44 7479 706871",
       ],
       "Once your request is verified, we will issue a refund to the original payment method or as service credits, whichever applies.",
     ],
@@ -82,7 +82,7 @@ const SECTIONS = [
       "If you need help with a refund or have any questions, reach out to our support team:",
       [
         "Email: livexatv.info@gmail.com",
-        "WhatsApp: +44 7346 521271",
+        "WhatsApp: +44 7479 706871",
       ],
     ],
   },

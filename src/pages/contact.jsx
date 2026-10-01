@@ -22,7 +22,7 @@ const CONTACT_INFO = [
   {
     icon: <FaWhatsapp aria-hidden="true" />,
     label: "WhatsApp",
-    value: "+44 7346 521271",
+    value: "+44 7479 706871",
     href: "https://wa.me/447346521271",
   },
   {

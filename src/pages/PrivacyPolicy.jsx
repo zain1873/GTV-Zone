@@ -110,7 +110,7 @@ const SECTIONS = [
       "If you have any questions or requests about this Privacy Policy, or about your personal data, please reach out to:",
       [
         "Email: livexatv.info@gmail.com",
-        "WhatsApp: +44 7346 521271",
+        "WhatsApp: +44 7479 706871",
       ],
     ],
   },
