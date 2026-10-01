@@ -72,7 +72,7 @@ function Reseller() {
 
                 <a
                   className="reseller-buy-btn"
-                  href={`https://wa.me/447346521271?text=${encodeURIComponent(
+                  href={`https://wa.me/447479706871?text=${encodeURIComponent(
                     `Hi GTV! I would like to buy:\n${plan.credits} credits - $${plan.price}`
                   )}`}
                   target="_blank"
@@ -100,7 +100,7 @@ function Reseller() {
             let&apos;s get you set up today.
           </p>
           <a
-            href="https://wa.me/447346521271"
+            href="https://wa.me/447479706871"
             target="_blank"
             rel="noopener noreferrer"
             className="reseller-cta-btn"

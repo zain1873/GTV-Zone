@@ -100,7 +100,7 @@ function LegalPage({ eyebrow, title, intro, updated, sections, children }) {
                 or chat with us on WhatsApp anytime.
               </p>
               <a
-                href="https://wa.me/447346521271"
+                href="https://wa.me/447479706871"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="legal-whatsapp-btn"

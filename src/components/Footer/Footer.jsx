@@ -49,7 +49,7 @@ function Footer() {
               </a> */}
 
               <a
-                href="https://wa.me/447346521271"
+                href="https://wa.me/447479706871"
                 className="contact-item"
                 aria-label="Message GTV on WhatsApp"
                 target="_blank"

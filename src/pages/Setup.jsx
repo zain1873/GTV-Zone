@@ -179,7 +179,7 @@ function Setup() {
             us on WhatsApp and our support team will get you sorted fast.
           </p>
           <a
-            href="https://wa.me/447346521271"
+            href="https://wa.me/447479706871"
             target="_blank"
             rel="noopener noreferrer"
             className="setup-cta-btn"

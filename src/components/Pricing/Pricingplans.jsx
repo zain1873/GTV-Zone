@@ -144,7 +144,7 @@ function PricingPlans() {
 
               <a
                 className="pricing-buy-btn"
-                href={`https://wa.me/447346521271?text=${encodeURIComponent(
+                href={`https://wa.me/447479706871?text=${encodeURIComponent(
                   buildWhatsAppMessage(plan, activeConnection)
                 )}`}
                 target="_blank"

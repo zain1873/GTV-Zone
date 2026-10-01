@@ -80,7 +80,7 @@ function WhyChooseUs() {
             <a
               key={step.number}
               className="why-choose-card"
-              href="https://wa.me/447346521271"
+              href="https://wa.me/447479706871"
               target="_blank"
               rel="noopener noreferrer"
             >

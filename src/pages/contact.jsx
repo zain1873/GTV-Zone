@@ -23,7 +23,7 @@ const CONTACT_INFO = [
     icon: <FaWhatsapp aria-hidden="true" />,
     label: "WhatsApp",
     value: "+44 7479 706871",
-    href: "https://wa.me/447346521271",
+    href: "https://wa.me/447479706871",
   },
   {
     icon: <FaClock aria-hidden="true" />,
@@ -175,7 +175,7 @@ function Contact() {
                 Get the fastest response from our team directly on WhatsApp.
               </p>
               <a
-                href="https://wa.me/447346521271"
+                href="https://wa.me/447479706871"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="contact-side-btn contact-side-btn-whatsapp"
