@@ -14,7 +14,7 @@ import Navbar from "../components/Navbar/Navbar";
 const CONTACT_INFO = [
   {
     icon: <FaEnvelope aria-hidden="true" />,
-    label: "Email Us",
+    label: "Email us",
     value: "livexatv.info@gmail.com",
     href: "mailto:livexatv.info@gmail.com",
   },
